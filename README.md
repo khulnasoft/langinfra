@@ -35,8 +35,6 @@
 9. **Customize workflows** or create flows entirely just using Python.
 10. **Ecosystem integrations** as reusable components for any model, API or database.
 
-![Integrations](./docs/static/img/integrations.png)
-
 ## 📦 Quickstart
 
 - **Install with pip** (Python 3.10 to 3.12):
@@ -54,14 +52,6 @@ uv pip install langinfra
 - **Cloud:** DataStax Langinfra is a hosted environment with zero setup. [Sign up for a free account.](https://astra.datastax.com/signup?type=langinfra)
 - **Self-managed:** Run Langinfra in your environment. [Install Langinfra](https://langinfra.github.io/docs/get-started-installation) to run a local Langinfra server, and then use the [Quickstart](https://langinfra.github.io/docs/get-started-quickstart) guide to create and execute a flow.
 - **Hugging Face:** [Clone the space using this link](https://huggingface.co/spaces/Langinfra/Langinfra?duplicate=true) to create a Langinfra workspace.
-
-[![Getting Started](https://github.com/user-attachments/assets/f1adfbe7-3c35-43a4-b265-661f3d4f875f)](https://www.youtube.com/watch?v=kinngWhaUKM)
-
-## ⭐ Stay up-to-date
-
-Star Langinfra on GitHub to be instantly notified of new releases.
-
-![Star Langinfra](https://github.com/user-attachments/assets/03168b17-a11d-4b2a-b0f7-c1cce69e5a2c)
 
 ## 👋 Contribute
 
