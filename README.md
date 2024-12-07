@@ -7,9 +7,9 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://docs.langinfra.org" style="text-decoration: underline;">Docs</a> -
+    <a href="https://langinfra.github.io/docs" style="text-decoration: underline;">Docs</a> -
     <a href="https://astra.datastax.com/signup?type=langinfra" style="text-decoration: underline;">Free Cloud Service</a> -
-    <a href="https://docs.langinfra.org/get-started-installation" style="text-decoration: underline;">Self Managed</a>
+    <a href="https://langinfra.github.io/docs/get-started-installation" style="text-decoration: underline;">Self Managed</a>
 
 </p>
 
@@ -52,7 +52,7 @@ uv pip install langinfra
 ```
 
 - **Cloud:** DataStax Langinfra is a hosted environment with zero setup. [Sign up for a free account.](https://astra.datastax.com/signup?type=langinfra)
-- **Self-managed:** Run Langinfra in your environment. [Install Langinfra](https://docs.langinfra.org/get-started-installation) to run a local Langinfra server, and then use the [Quickstart](https://docs.langinfra.org/get-started-quickstart) guide to create and execute a flow.
+- **Self-managed:** Run Langinfra in your environment. [Install Langinfra](https://langinfra.github.io/docs/get-started-installation) to run a local Langinfra server, and then use the [Quickstart](https://langinfra.github.io/docs/get-started-quickstart) guide to create and execute a flow.
 - **Hugging Face:** [Clone the space using this link](https://huggingface.co/spaces/Langinfra/Langinfra?duplicate=true) to create a Langinfra workspace.
 
 [![Getting Started](https://github.com/user-attachments/assets/f1adfbe7-3c35-43a4-b265-661f3d4f875f)](https://www.youtube.com/watch?v=kinngWhaUKM)

@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD030 -->
 
-# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.org)
+# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.khulnasoft.com)
 
 <p align="center"><strong>
     一种用于构建多智能体和RAG应用的可视化框架
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://docs.langinfra.org" style="text-decoration: underline;">文档</a> -
+    <a href="https://langinfra.github.io/docs" style="text-decoration: underline;">文档</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">加入我们的Discord社区</a> -
     <a href="https://twitter.com/langinfra" style="text-decoration: underline;">在X上关注我们</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra-Preview" style="text-decoration: underline;">在线体验</a>

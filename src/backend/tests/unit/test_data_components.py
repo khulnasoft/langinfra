@@ -192,7 +192,7 @@ def test_directory_without_mocks():
 
 def test_url_component():
     url_component = data.URLComponent()
-    url_component.set_attributes({"urls": ["https://langinfra.org"]})
+    url_component.set_attributes({"urls": ["https://langinfra.khulnasoft.com"]})
     # the url component can be used to load the contents of a website
     _data = url_component.fetch_content()
     assert all(value.data for value in _data)

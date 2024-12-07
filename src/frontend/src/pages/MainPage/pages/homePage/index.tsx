@@ -147,7 +147,7 @@ const HomePage = ({ type }) => {
                     <div className="pt-2 text-center text-sm text-secondary-foreground">
                       No saved or custom components. Learn more about{" "}
                       <a
-                        href="https://docs.langinfra.org/components-custom-components"
+                        href="https://langinfra.github.io/docs/components-custom-components"
                         target="_blank"
                         rel="noreferrer"
                         className="underline"

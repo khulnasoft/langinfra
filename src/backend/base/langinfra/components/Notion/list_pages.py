@@ -21,7 +21,7 @@ class NotionListPages(LCToolComponent):
         '{"filter": {"property": "Status", "select": {"equals": "Done"}}, '
         '"sorts": [{"timestamp": "created_time", "direction": "descending"}]}'
     )
-    documentation: str = "https://docs.langinfra.org/integrations/notion/list-pages"
+    documentation: str = "https://langinfra.github.io/docs/integrations/notion/list-pages"
     icon = "NotionDirectoryLoader"
 
     inputs = [
