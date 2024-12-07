@@ -7,7 +7,7 @@ from langinfra.schema import Data
 class CustomComponent(Component):
     display_name = "Custom Component"
     description = "Use as a template to create your own component."
-    documentation: str = "http://docs.langinfra.org/components/custom"
+    documentation: str = "http://langinfra.github.io/docs/components/custom"
     icon = "code"
     name = "CustomComponent"
 

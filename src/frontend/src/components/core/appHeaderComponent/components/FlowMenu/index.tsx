@@ -316,7 +316,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
                 </h2>
                 <p className="text-muted-foreground">
                   <a
-                    href="https://docs.langinfra.org/configuration-auto-saving"
+                    href="https://langinfra.github.io/docs/configuration-auto-saving"
                     className="text-primary underline"
                   >
                     Enable auto-saving

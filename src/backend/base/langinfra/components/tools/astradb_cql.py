@@ -14,7 +14,7 @@ from langinfra.schema import Data
 class AstraDBCQLToolComponent(LCToolComponent):
     display_name: str = "Astra DB CQL"
     description: str = "Create a tool to get transactional data from DataStax Astra DB CQL Table"
-    documentation: str = "https://docs.langinfra.org/Components/components-tools#astra-db-cql-tool"
+    documentation: str = "https://langinfra.github.io/docs/Components/components-tools#astra-db-cql-tool"
     icon: str = "AstraDB"
 
     inputs = [
