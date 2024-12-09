@@ -5,7 +5,7 @@
 
 <!-- markdownlint-disable MD030 -->
 
-# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.khulnasoft.com)
+# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.org)
 
 <p align="center"><strong>
     マルチエージェントおよびRAGアプリケーションを構築するためのビジュアルフレームワーク
@@ -15,9 +15,9 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://langinfra.github.io/docs" style="text-decoration: underline;">ドキュメント</a> -
+    <a href="https://docs.langinfra.org" style="text-decoration: underline;">ドキュメント</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">Discordに参加</a> -
-    <a href="https://twitter.com/langinfra" style="text-decoration: underline;">Xでフォロー</a> -
+    <a href="https://twitter.com/langinfra_ai" style="text-decoration: underline;">Xでフォロー</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra-Preview" style="text-decoration: underline;">ライブデモ</a>
 </p>
 

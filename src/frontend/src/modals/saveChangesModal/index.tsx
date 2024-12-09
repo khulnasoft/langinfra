@@ -59,7 +59,7 @@ export function SaveChangesModal({
             <a
               target="_blank"
               className="underline"
-              href="https://langinfra.github.io/docs/configuration-auto-saving"
+              href="https://docs.langinfra.org/configuration-auto-saving"
             >
               Enable auto-saving
             </a>{" "}

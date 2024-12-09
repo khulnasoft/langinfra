@@ -1,3 +1,3 @@
-FROM langinfraai/langinfra:latest
+FROM khulnasoft/langinfra:latest
 
 ENTRYPOINT ["python", "-m", "langinfra", "run"]

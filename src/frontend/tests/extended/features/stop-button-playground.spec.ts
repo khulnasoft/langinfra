@@ -26,13 +26,20 @@ test(
 
     while (modalCount === 0) {
       await page.getByText("New Flow", { exact: true }).click();
-      await page.waitForTimeout(3000);
+      await page.waitForSelector('[data-testid="modal-title"]', {
+        timeout: 3000,
+      });
       modalCount = await page.getByTestId("modal-title")?.count();
     }
 
     await page.getByTestId("blank-flow").click();
 
-    await page.waitForTimeout(1000);
+    await page.waitForSelector(
+      '[data-testid="sidebar-custom-component-button"]',
+      {
+        timeout: 3000,
+      },
+    );
 
     await page.getByTestId("sidebar-custom-component-button").click();
     await page.getByTitle("fit view").click();
@@ -43,7 +50,9 @@ test(
     await page.getByTestId("sidebar-search-input").click();
     await page.getByTestId("sidebar-search-input").fill("chat output");
 
-    await page.waitForTimeout(1000);
+    await page.waitForSelector('[data-testid="outputsChat Output"]', {
+      timeout: 3000,
+    });
 
     await page
       .getByTestId("outputsChat Output")
@@ -69,7 +78,7 @@ from langinfra.schema.message import Message
 class CustomComponent(Component):
     display_name = "Custom Component"
     description = "Use as a template to create your own component."
-    documentation: str = "http://langinfra.github.io/docs/components/custom"
+    documentation: str = "http://docs.langinfra.org/components/custom"
     icon = "custom_components"
     name = "CustomComponent"
 
@@ -96,8 +105,6 @@ class CustomComponent(Component):
 
     await page.getByText("Check & Save").last().click();
 
-    await page.waitForTimeout(1000);
-
     await page.getByTestId("fit_view").click();
     await page.getByTestId("zoom_out").click();
     await page.getByTestId("zoom_out").click();
@@ -115,15 +122,13 @@ class CustomComponent(Component):
     await elementChatOutput.hover();
     await page.mouse.up();
 
-    await page.waitForTimeout(1000);
+    await page.waitForSelector('[data-testid="button_run_chat output"]', {
+      timeout: 3000,
+    });
 
     await page.getByTestId("button_run_chat output").click();
 
-    await page.waitForTimeout(1000);
-
     await page.getByText("Playground", { exact: true }).last().click();
-
-    await page.waitForTimeout(1000);
 
     await page.waitForSelector('[data-testid="button-stop"]', {
       timeout: 30000,

@@ -7,8 +7,8 @@ from loguru import logger
 from typing_extensions import override
 
 from langinfra.base.flow_processing.utils import build_data_from_result_data, format_flow_output_data
-from langinfra.graph.graph.base import Graph  # cannot be a part of TYPE_CHECKING   # noqa: TCH001
-from langinfra.graph.vertex.base import Vertex  # cannot be a part of TYPE_CHECKING  # noqa: TCH001
+from langinfra.graph.graph.base import Graph  # cannot be a part of TYPE_CHECKING   # noqa: TC001
+from langinfra.graph.vertex.base import Vertex  # cannot be a part of TYPE_CHECKING  # noqa: TC001
 from langinfra.helpers.flow import build_schema_from_inputs, get_arg_names, get_flow_inputs, run_flow
 from langinfra.utils.async_helpers import run_until_complete
 

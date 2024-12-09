@@ -35,7 +35,7 @@ The Docker Compose configuration spins up two services: `langinfra` and `postgre
 
 ### LangInfra Service
 
-The `langinfra` service uses the `langinfraai/langinfra:latest` Docker image and exposes port 7860. It depends on the `postgres` service.
+The `langinfra` service uses the `khulnasoft/langinfra:latest` Docker image and exposes port 7860. It depends on the `postgres` service.
 
 Environment variables:
 
@@ -62,4 +62,4 @@ Volumes:
 
 ## Switching to a Specific LangInfra Version
 
-If you want to use a specific version of LangInfra, you can modify the `image` field under the `langinfra` service in the Docker Compose file. For example, to use version 1.0-alpha, change `langinfraai/langinfra:latest` to `langinfraai/langinfra:1.0-alpha`.
+If you want to use a specific version of LangInfra, you can modify the `image` field under the `langinfra` service in the Docker Compose file. For example, to use version 1.0-alpha, change `khulnasoft/langinfra:latest` to `khulnasoft/langinfra:1.0-alpha`.

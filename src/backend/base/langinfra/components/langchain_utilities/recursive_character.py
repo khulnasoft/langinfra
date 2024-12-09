@@ -10,7 +10,7 @@ from langinfra.utils.util import unescape_string
 class RecursiveCharacterTextSplitterComponent(LCTextSplitterComponent):
     display_name: str = "Recursive Character Text Splitter"
     description: str = "Split text trying to keep all related text together."
-    documentation: str = "https://langinfra.github.io/docs/components/text-splitters#recursivecharactertextsplitter"
+    documentation: str = "https://docs.langinfra.org/components/text-splitters#recursivecharactertextsplitter"
     name = "RecursiveCharacterTextSplitter"
     icon = "LangChain"
 

@@ -11,7 +11,7 @@ const config = {
   tagline:
     "Langinfra is a low-code app builder for RAG and multi-agent AI applications.",
   favicon: "img/favicon.ico",
-  url: "https://langinfra.github.io/docs",
+  url: "https://docs.langinfra.org",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -169,7 +169,7 @@ const config = {
           },
           {
             position: "right",
-            href: "https://twitter.com/langinfra",
+            href: "https://twitter.com/langinfra_ai",
             className: "header-twitter-link",
             target: "_blank",
             rel: null,

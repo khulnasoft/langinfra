@@ -1,4 +1,4 @@
-# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.khulnasoft.com)
+# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.org)
 
 <p align="center"><strong>
     Un Framework visual para crear aplicaciones de agentes autónomos y RAG
@@ -8,9 +8,9 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://langinfra.github.io/docs" style="text-decoration: underline;">Documentación</a> -
+    <a href="https://docs.langinfra.org" style="text-decoration: underline;">Documentación</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">Únete a nuestro Discord</a> -
-    <a href="https://twitter.com/langinfra" style="text-decoration: underline;">Síguenos en X</a> -
+    <a href="https://twitter.com/langinfra_ai" style="text-decoration: underline;">Síguenos en X</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra" style="text-decoration: underline;">Demostración</a>
 </p>
 

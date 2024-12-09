@@ -56,7 +56,7 @@ import pytorch
 class CustomComponent(Component):
     display_name = "Custom Component"
     description = "Use as a template to create your own component."
-    documentation: str = "http://langinfra.github.io/docs/components/custom"
+    documentation: str = "http://docs.langinfra.org/components/custom"
     icon = "custom_components"
     name = "CustomComponent"
 

@@ -5,7 +5,7 @@
 
 <!-- markdownlint-disable MD030 -->
 
-# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.khulnasoft.com)
+# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.org)
 
 <p align="center"><strong>
     다중 에이전트 및 RAG 애플리케이션 구축을 위한 시각적 프레임워크
@@ -15,9 +15,9 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://langinfra.github.io/docs" style="text-decoration: underline;">문서</a> -
+    <a href="https://docs.langinfra.org" style="text-decoration: underline;">문서</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">Discord에 참여하기</a> -
-    <a href="https://twitter.com/langinfra" style="text-decoration: underline;">X에서 팔로우하기</a> -
+    <a href="https://twitter.com/langinfra_ai" style="text-decoration: underline;">X에서 팔로우하기</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra" style="text-decoration: underline;">실시간 데모</a>
 </p>
 
