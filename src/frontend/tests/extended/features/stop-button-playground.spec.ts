@@ -69,7 +69,7 @@ from langinfra.schema.message import Message
 class CustomComponent(Component):
     display_name = "Custom Component"
     description = "Use as a template to create your own component."
-    documentation: str = "http://docs.langinfra.org/components/custom"
+    documentation: str = "http://langinfra.github.io/docs/components/custom"
     icon = "custom_components"
     name = "CustomComponent"
 

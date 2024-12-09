@@ -19,7 +19,9 @@ test(
 
     while (modalCount === 0) {
       await page.getByText("New Flow", { exact: true }).click();
-      await page.waitForTimeout(3000);
+      await page.waitForSelector('[data-testid="modal-title"]', {
+        timeout: 3000,
+      });
       modalCount = await page.getByTestId("modal-title")?.count();
     }
 
@@ -29,7 +31,12 @@ test(
 
     await page.getByTestId("blank-flow").click();
 
-    await page.waitForTimeout(1000);
+    await page.waitForSelector(
+      '[data-testid="sidebar-custom-component-button"]',
+      {
+        timeout: 30000,
+      },
+    );
 
     await page.getByTestId("sidebar-custom-component-button").click();
 
@@ -49,7 +56,7 @@ import pytorch
 class CustomComponent(Component):
     display_name = "Custom Component"
     description = "Use as a template to create your own component."
-    documentation: str = "http://docs.langinfra.org/components/custom"
+    documentation: str = "http://langinfra.github.io/docs/components/custom"
     icon = "custom_components"
     name = "CustomComponent"
 
@@ -72,6 +79,7 @@ class CustomComponent(Component):
 
     await page.getByText("Check & Save").last().click();
 
+    //wait for the animation to propagate
     await page.waitForTimeout(1000);
 
     const error = await page

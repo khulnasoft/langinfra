@@ -26,7 +26,7 @@ from langinfra.utils.version import get_version_info
 class AstraDBVectorStoreComponent(LCVectorStoreComponent):
     display_name: str = "Astra DB"
     description: str = "Implementation of Vector Store using Astra DB with search capabilities"
-    documentation: str = "https://docs.langinfra.org/starter-projects-vector-store-rag"
+    documentation: str = "https://langinfra.github.io/docs/starter-projects-vector-store-rag"
     name = "AstraDB"
     icon: str = "AstraDB"
 

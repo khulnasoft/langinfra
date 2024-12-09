@@ -10,7 +10,7 @@ export default function getWidgetCode({
   flowName,
   isAuth,
 }: GetCodeType): string {
-  return `<script src="https://cdn.jsdelivr.net/gh/logspace-ai/langinfra-embedded-chat@v1.0.6/dist/build/static/js/bundle.min.js""></script>
+  return `<script src="https://cdn.jsdelivr.net/gh/khulnasoft/langinfra-embedded-chat@v1.0.6/dist/build/static/js/bundle.min.js""></script>
 
   <langinfra-chat
     window_title="${flowName}"

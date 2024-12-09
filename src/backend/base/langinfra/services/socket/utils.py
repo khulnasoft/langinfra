@@ -11,7 +11,7 @@ from langinfra.graph.graph.base import Graph
 from langinfra.graph.utils import log_vertex_build
 from langinfra.graph.vertex.base import Vertex
 from langinfra.services.database.models.flow.model import Flow
-from langinfra.services.deps import get_async_session
+from langinfra.services.deps import get_session
 
 
 def set_socketio_server(socketio_server) -> None:
@@ -23,7 +23,7 @@ def set_socketio_server(socketio_server) -> None:
 
 async def get_vertices(sio, sid, flow_id, chat_service) -> None:
     try:
-        session = await anext(get_async_session())
+        session = await anext(get_session())
         stmt = select(Flow).where(Flow.id == flow_id)
         flow: Flow = (await session.exec(stmt)).first()
         if not flow or not flow.data:

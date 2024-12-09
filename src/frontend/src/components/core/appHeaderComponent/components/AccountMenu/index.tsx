@@ -93,7 +93,10 @@ export const AccountMenu = () => {
                 Feedback
               </HeaderMenuItemButton>
             ) : (
-              <HeaderMenuItemLink newPage href="https://docs.langinfra.org">
+              <HeaderMenuItemLink
+                newPage
+                href="https://langinfra.github.io/docs"
+              >
                 Docs
               </HeaderMenuItemLink>
             )}
