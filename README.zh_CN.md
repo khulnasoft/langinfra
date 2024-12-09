@@ -12,7 +12,7 @@
 <p align="center" style="font-size: 12px;">
     <a href="https://docs.langinfra.org" style="text-decoration: underline;">文档</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">加入我们的Discord社区</a> -
-    <a href="https://twitter.com/langinfra_ai" style="text-decoration: underline;">在X上关注我们</a> -
+    <a href="https://twitter.com/khulnasoft" style="text-decoration: underline;">在X上关注我们</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra-Preview" style="text-decoration: underline;">在线体验</a>
 </p>
 

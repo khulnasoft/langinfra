@@ -169,7 +169,7 @@ const config = {
           },
           {
             position: "right",
-            href: "https://twitter.com/langinfra_ai",
+            href: "https://twitter.com/khulnasoft",
             className: "header-twitter-link",
             target: "_blank",
             rel: null,
