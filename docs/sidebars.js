@@ -106,10 +106,11 @@ module.exports = {
         "Integrations/integrations-langsmith",
         "Integrations/integrations-langwatch",
         {
-          type: "category",
-          label: "Google",
+          type: 'category',
+          label: 'Google',
           items: [
-            "Integrations/Google/integrations-setup-google-oauth-langinfra",
+            'Integrations/Google/integrations-setup-google-oauth-langinfra',
+            'Integrations/Google/integrations-setup-google-cloud-vertex-ai-langinfra',
           ],
         },
         {

@@ -17,7 +17,7 @@
 <p align="center" style="font-size: 12px;">
     <a href="https://docs.langinfra.org" style="text-decoration: underline;">문서</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">Discord에 참여하기</a> -
-    <a href="https://twitter.com/langinfra" style="text-decoration: underline;">X에서 팔로우하기</a> -
+    <a href="https://twitter.com/khulnasoft" style="text-decoration: underline;">X에서 팔로우하기</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra" style="text-decoration: underline;">실시간 데모</a>
 </p>
 

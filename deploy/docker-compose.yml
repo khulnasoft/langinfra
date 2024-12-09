@@ -67,7 +67,7 @@ services:
         - traefik.http.routers.${STACK_NAME?Variable not set}-proxy-http.middlewares=${STACK_NAME?Variable not set}-www-redirect,${STACK_NAME?Variable not set}-https-redirect
 
   backend: &backend
-    image: "langinfraai/langinfra-backend:latest"
+    image: "khulnasoft/langinfra-backend:latest"
     depends_on:
       - db
       - broker
@@ -165,7 +165,7 @@ services:
         - traefik.http.services.${STACK_NAME?Variable not set}-flower.loadbalancer.server.port=5555
 
   frontend:
-    image: "langinfraai/langinfra-frontend:latest"
+    image: "khulnasoft/langinfra-frontend:latest"
     env_file:
       - .env
     restart: on-failure

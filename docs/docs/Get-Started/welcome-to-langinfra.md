@@ -31,7 +31,7 @@ Join Langinfra's vibrant community of developers and AI enthusiasts. See the fol
 
 * [Contribute to Langinfra](contributing-how-to-contribute)
 * [Langinfra Discord Server](https://discord.gg/EqksyE2EX9)
-* [@langinfra](https://twitter.com/langinfra) 
+* [@langinfra_ai](https://twitter.com/khulnasoft) 
 
 ## Get started with Langinfra
 

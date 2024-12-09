@@ -17,13 +17,14 @@ from langinfra.io import BoolInput, HandleInput, IntInput, MessageTextInput
 from langinfra.memory import delete_message
 from langinfra.schema import Data
 from langinfra.schema.content_block import ContentBlock
-from langinfra.schema.log import SendMessageFunctionType
 from langinfra.schema.message import Message
 from langinfra.template import Output
 from langinfra.utils.constants import MESSAGE_SENDER_AI
 
 if TYPE_CHECKING:
     from langchain_core.messages import BaseMessage
+
+    from langinfra.schema.log import SendMessageFunctionType
 
 
 DEFAULT_TOOLS_DESCRIPTION = "A helpful assistant with access to the following tools:"
@@ -163,7 +164,7 @@ class LCAgentComponent(Component):
                     version="v2",
                 ),
                 agent_message,
-                cast(SendMessageFunctionType, self.send_message),
+                cast("SendMessageFunctionType", self.send_message),
             )
         except ExceptionWithMessageError as e:
             msg_id = e.agent_message.id

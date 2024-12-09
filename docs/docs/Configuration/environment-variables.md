@@ -42,7 +42,7 @@ set VARIABLE_NAME='VALUE'
 docker run -it --rm \
     -p 7860:7860 \
     -e VARIABLE_NAME='VALUE' \
-    langinfraai/langinfra:latest
+    khulnasoft/langinfra:latest
 ```
 </TabItem>
 
@@ -84,7 +84,7 @@ If it detects a supported environment variable, then it automatically adopts the
     docker run -it --rm \
         -p 7860:7860 \
         --env-file .env \
-        langinfraai/langinfra:latest
+        khulnasoft/langinfra:latest
     ```
     </TabItem>
 

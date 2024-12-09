@@ -117,7 +117,7 @@ export const AccountMenu = () => {
                 Share Feedback on Github
               </HeaderMenuItemLink>
             )}
-            <HeaderMenuItemLink newPage href="https://twitter.com/langinfra">
+            <HeaderMenuItemLink newPage href="https://twitter.com/langinfra_ai">
               Follow Langinfra on X
             </HeaderMenuItemLink>
             <HeaderMenuItemLink newPage href="https://discord.gg/EqksyE2EX9">

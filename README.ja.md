@@ -17,7 +17,7 @@
 <p align="center" style="font-size: 12px;">
     <a href="https://docs.langinfra.org" style="text-decoration: underline;">ドキュメント</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">Discordに参加</a> -
-    <a href="https://twitter.com/langinfra" style="text-decoration: underline;">Xでフォロー</a> -
+    <a href="https://twitter.com/khulnasoft" style="text-decoration: underline;">Xでフォロー</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra-Preview" style="text-decoration: underline;">ライブデモ</a>
 </p>
 
