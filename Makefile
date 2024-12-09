@@ -1,4 +1,4 @@
-.PHONY: all init format lint build build_frontend install_frontend run_frontend run_backend dev help tests coverage clean_python_cache clean_npm_cache clean_all
+.PHONY: all init format lint build build_frontend install_frontend install_examples run_frontend run_backend dev help tests tests_examples coverage clean_python_cache clean_npm_cache clean_all
 
 # Configurations
 VERSION=$(shell grep "^version" pyproject.toml | sed 's/.*\"\(.*\)\"$$/\1/')
@@ -444,3 +444,9 @@ alembic-check: ## check migration status
 alembic-stamp: ## stamp the database with a specific revision
 	@echo 'Stamping the database with revision $(revision)'
 	cd src/backend/base/langinfra/ && uv run alembic stamp $(revision)
+
+tests_examples:
+	pytest tests
+
+install_examples:
+	pip install -r requirements.txt
