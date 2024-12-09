@@ -45,11 +45,7 @@ export const AccountMenu = () => {
             className="h-7 w-7 rounded-lg focus-visible:outline-0"
             data-testid="user-profile-settings"
           >
-            {ENABLE_DATASTAX_LANGINFRA ? (
-              <CustomProfileIcon />
-            ) : (
-              <ProfileIcon />
-            )}
+            {ENABLE_DATASTAX_LANGINFRA ? <CustomProfileIcon /> : <ProfileIcon />}
           </div>
         </HeaderMenuToggle>
         <HeaderMenuItems position="right">
@@ -93,7 +89,7 @@ export const AccountMenu = () => {
                 Feedback
               </HeaderMenuItemButton>
             ) : (
-              <HeaderMenuItemLink newPage href="https://docs.langinfra.org">
+              <HeaderMenuItemLink newPage href="https://docs-langinfra.khulnasoft.com">
                 Docs
               </HeaderMenuItemLink>
             )}
@@ -117,7 +113,7 @@ export const AccountMenu = () => {
                 Share Feedback on Github
               </HeaderMenuItemLink>
             )}
-            <HeaderMenuItemLink newPage href="https://twitter.com/langinfra_ai">
+            <HeaderMenuItemLink newPage href="https://twitter.com/khulnasoft">
               Follow Langinfra on X
             </HeaderMenuItemLink>
             <HeaderMenuItemLink newPage href="https://discord.gg/EqksyE2EX9">

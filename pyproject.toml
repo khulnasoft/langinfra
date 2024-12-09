@@ -108,7 +108,7 @@ dependencies = [
 
 [project.urls]
 Repository = "https://github.com/khulnasoft/langinfra"
-Documentation = "https://docs.langinfra.org"
+Documentation = "https://docs-langinfra.khulnasoft.com"
 
 [project.optional-dependencies]
 deploy = [

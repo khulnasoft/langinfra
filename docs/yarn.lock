@@ -1296,7 +1296,7 @@
     webpack "^5.95.0"
     webpackbar "^6.0.1"
 
-"@docusaurus/core@^2.0.0-beta || ^3.0.0-alpha", "@docusaurus/core@3.5.2":
+"@docusaurus/core@3.5.2":
   version "3.5.2"
   resolved "https://registry.npmjs.org/@docusaurus/core/-/core-3.5.2.tgz"
   integrity sha512-4Z1WkhCSkX4KO0Fw5m/Vuc7Q3NxBG53NE5u59Rs96fWkMPZVSrzEPP16/Nk6cWb/shK7xXPndTmalJtw7twL/w==
@@ -1455,7 +1455,7 @@
     chalk "^4.1.2"
     tslib "^2.6.0"
 
-"@docusaurus/mdx-loader@^3.2.0", "@docusaurus/mdx-loader@3.5.2":
+"@docusaurus/mdx-loader@3.5.2", "@docusaurus/mdx-loader@^3.2.0":
   version "3.5.2"
   resolved "https://registry.npmjs.org/@docusaurus/mdx-loader/-/mdx-loader-3.5.2.tgz"
   integrity sha512-ku3xO9vZdwpiMIVd8BzWV0DCqGEbCP5zs1iHfKX50vw6jX8vQo0ylYo1YJMZyz6e+JFJ17HYHT5FzVidz2IflA==
@@ -1698,7 +1698,7 @@
     sitemap "^7.1.1"
     tslib "^2.6.0"
 
-"@docusaurus/preset-classic@^3.2.0", "@docusaurus/preset-classic@3.5.2":
+"@docusaurus/preset-classic@3.5.2", "@docusaurus/preset-classic@^3.2.0":
   version "3.5.2"
   resolved "https://registry.npmjs.org/@docusaurus/preset-classic/-/preset-classic-3.5.2.tgz"
   integrity sha512-3ihfXQ95aOHiLB5uCu+9PRy2gZCeSZoDcqpnDvf3B+sTrMvMTr8qRUzBvWkoIqc82yG5prCboRjk1SVILKx6sg==
@@ -1717,7 +1717,7 @@
     "@docusaurus/theme-search-algolia" "3.5.2"
     "@docusaurus/types" "3.5.2"
 
-"@docusaurus/theme-classic@>=3.0.0", "@docusaurus/theme-classic@3.5.2":
+"@docusaurus/theme-classic@3.5.2":
   version "3.5.2"
   resolved "https://registry.npmjs.org/@docusaurus/theme-classic/-/theme-classic-3.5.2.tgz"
   integrity sha512-XRpinSix3NBv95Rk7xeMF9k4safMkwnpSgThn0UNQNumKvmcIYjfkwfh2BhwYh/BxMXQHJ/PdmNh22TQFpIaYg==
@@ -1852,7 +1852,14 @@
     webpack "^5.95.0"
     webpack-merge "^5.9.0"
 
-"@docusaurus/utils-common@^2 || ^3", "@docusaurus/utils-common@3.6.1":
+"@docusaurus/utils-common@3.5.2", "@docusaurus/utils-common@^3.2.0":
+  version "3.5.2"
+  resolved "https://registry.npmjs.org/@docusaurus/utils-common/-/utils-common-3.5.2.tgz"
+  integrity sha512-i0AZjHiRgJU6d7faQngIhuHKNrszpL/SHQPgF1zH4H+Ij6E9NBYGy6pkcGWToIv7IVPbs+pQLh1P3whn0gWXVg==
+  dependencies:
+    tslib "^2.6.0"
+
+"@docusaurus/utils-common@3.6.1", "@docusaurus/utils-common@^2 || ^3":
   version "3.6.1"
   resolved "https://registry.npmjs.org/@docusaurus/utils-common/-/utils-common-3.6.1.tgz"
   integrity sha512-LX1qiTiC0aS8c92uZ+Wj2iNCNJyYZJIKY8/nZDKNMBfo759VYVS3RX3fKP3DznB+16sYp7++MyCz/T6fOGaRfw==
@@ -1860,7 +1867,7 @@
     "@docusaurus/types" "3.6.1"
     tslib "^2.6.0"
 
-"@docusaurus/utils-common@^3.2.0", "@docusaurus/utils-common@3.5.2":
+"@docusaurus/utils-validation@3.5.2", "@docusaurus/utils-validation@^3.2.0", "@docusaurus/utils-validation@^3.5.0":
   version "3.5.2"
   resolved "https://registry.npmjs.org/@docusaurus/utils-common/-/utils-common-3.5.2.tgz"
   integrity sha512-i0AZjHiRgJU6d7faQngIhuHKNrszpL/SHQPgF1zH4H+Ij6E9NBYGy6pkcGWToIv7IVPbs+pQLh1P3whn0gWXVg==
@@ -1881,7 +1888,7 @@
     lodash "^4.17.21"
     tslib "^2.6.0"
 
-"@docusaurus/utils-validation@^3.2.0", "@docusaurus/utils-validation@^3.5.0", "@docusaurus/utils-validation@3.5.2":
+"@docusaurus/utils@3.5.2", "@docusaurus/utils@^3.2.0", "@docusaurus/utils@^3.5.0":
   version "3.5.2"
   resolved "https://registry.npmjs.org/@docusaurus/utils-validation/-/utils-validation-3.5.2.tgz"
   integrity sha512-m+Foq7augzXqB6HufdS139PFxDC5d5q2QKZy8q0qYYvGdI6nnlNsGH4cIGsgBnV7smz+mopl3g4asbSDvMV0jA==
@@ -1903,32 +1910,6 @@
     "@docusaurus/logger" "3.6.1"
     "@docusaurus/types" "3.6.1"
     "@docusaurus/utils-common" "3.6.1"
-    "@svgr/webpack" "^8.1.0"
-    escape-string-regexp "^4.0.0"
-    file-loader "^6.2.0"
-    fs-extra "^11.1.1"
-    github-slugger "^1.5.0"
-    globby "^11.1.0"
-    gray-matter "^4.0.3"
-    jiti "^1.20.0"
-    js-yaml "^4.1.0"
-    lodash "^4.17.21"
-    micromatch "^4.0.5"
-    prompts "^2.4.2"
-    resolve-pathname "^3.0.0"
-    shelljs "^0.8.5"
-    tslib "^2.6.0"
-    url-loader "^4.1.1"
-    utility-types "^3.10.0"
-    webpack "^5.88.1"
-
-"@docusaurus/utils@^3.2.0", "@docusaurus/utils@^3.5.0", "@docusaurus/utils@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.npmjs.org/@docusaurus/utils/-/utils-3.5.2.tgz"
-  integrity sha512-33QvcNFh+Gv+C2dP9Y9xWEzMgf3JzrpL2nW9PopidiohS1nDcyknKRx2DWaFvyVTTYIkkABVSr073VTj/NITNA==
-  dependencies:
-    "@docusaurus/logger" "3.5.2"
-    "@docusaurus/utils-common" "3.5.2"
     "@svgr/webpack" "^8.1.0"
     escape-string-regexp "^4.0.0"
     file-loader "^6.2.0"
@@ -4412,7 +4393,7 @@ browserify-zlib@^0.2.0:
   dependencies:
     pako "~1.0.5"
 
-browserslist@^4.0.0, browserslist@^4.18.1, browserslist@^4.23.0, browserslist@^4.23.3, browserslist@^4.24.0, browserslist@^4.24.2, "browserslist@>= 4.21.0":
+browserslist@^4.0.0, browserslist@^4.18.1, browserslist@^4.23.0, browserslist@^4.23.3, browserslist@^4.24.0, browserslist@^4.24.2:
   version "4.24.2"
   resolved "https://registry.npmjs.org/browserslist/-/browserslist-4.24.2.tgz"
   integrity sha512-ZIc+Q62revdMcqC6aChtW4jz3My3klmCO1fEmINZY/8J3EpBg5/A/D0AKmBveUh6pgoeycoMkVMko84tuYS+Gg==

@@ -11,7 +11,7 @@ const config = {
   tagline:
     "Langinfra is a low-code app builder for RAG and multi-agent AI applications.",
   favicon: "img/favicon.ico",
-  url: "https://docs.langinfra.org",
+  url: "https://docs-langinfra.khulnasoft.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
