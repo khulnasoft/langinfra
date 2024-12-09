@@ -13,7 +13,7 @@ from langinfra.schema import Data
 class NotionSearch(LCToolComponent):
     display_name: str = "Search "
     description: str = "Searches all pages and databases that have been shared with an integration."
-    documentation: str = "https://docs.langinfra.org/integrations/notion/search"
+    documentation: str = "https://docs-langinfra.khulnasoft.com/integrations/notion/search"
     icon = "NotionDirectoryLoader"
 
     inputs = [

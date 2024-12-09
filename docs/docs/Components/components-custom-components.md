@@ -26,7 +26,7 @@ from langinfra.schema import Data
 class CustomComponent(Component):
     display_name = "Custom Component"
     description = "Use as a template to create your own component."
-    documentation: str = "http://docs.langinfra.org/components/custom"
+    documentation: str = "http://docs-langinfra.khulnasoft.com/components/custom"
     icon = "custom_components"
     name = "CustomComponent"
 
@@ -62,7 +62,7 @@ from langinfra.schema import Data
 class CustomComponent(Component):
     display_name = "Custom Component"
     description = "Use as a template to create your own component."
-    documentation: str = "http://docs.langinfra.org/components/custom"
+    documentation: str = "http://docs-langinfra.khulnasoft.com/components/custom"
     icon = "custom_components"
     name = "CustomComponent"
 ```

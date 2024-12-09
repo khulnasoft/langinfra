@@ -8,7 +8,7 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://docs.langinfra.org" style="text-decoration: underline;">Documentación</a> -
+    <a href="https://docs-langinfra.khulnasoft.com" style="text-decoration: underline;">Documentación</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">Únete a nuestro Discord</a> -
     <a href="https://twitter.com/khulnasoft" style="text-decoration: underline;">Síguenos en X</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra" style="text-decoration: underline;">Demostración</a>
