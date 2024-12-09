@@ -5,7 +5,7 @@ from loguru import logger
 from pydantic import BaseModel
 from sqlmodel import select
 
-from langinfra.api.utils import AsyncDbSession
+from langinfra.api.utils import DbSession
 from langinfra.services.database.models.flow import Flow
 from langinfra.services.deps import get_chat_service
 
@@ -38,7 +38,7 @@ async def health():
 # It's a reliable health check for a langinfra instance
 @health_check_router.get("/health_check")
 async def health_check(
-    session: AsyncDbSession,
+    session: DbSession,
 ) -> HealthResponse:
     response = HealthResponse()
     # use a fixed valid UUId that UUID collision is very unlikely
