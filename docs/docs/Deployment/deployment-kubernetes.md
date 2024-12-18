@@ -230,20 +230,20 @@ If you want to download the flow from a remote location, you can specify the URL
 
 	```shell
 	helm install my-langinfra-app langinfra/langinfra-runtime -n langinfra --create-namespace --set image.repository=myuser/langinfra-just-chat --set image.tag=1.0.0
-
+	
 	```
 
 
 	```shell
 	helm install my-langinfra-app langinfra/langinfra-runtime -n langinfra --create-namespace --set downloadFlows.flows[0].url=https://raw.githubusercontent.com/khulnasoft/langinfra/dev/src/backend/base/langinfra/initial_setup/starter_projects/Basic%20Prompting%20(Hello%2C%20world!).json
-
+	
 	```
 
 3. Check the status of the pods.
 
 	```text
 	kubectl get pods -n langinfra
-
+	
 	```
 
 

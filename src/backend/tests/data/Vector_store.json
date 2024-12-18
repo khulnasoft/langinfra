@@ -853,7 +853,7 @@
                                 "placeholder": "",
                                 "show": true,
                                 "multiline": false,
-                                "value": "http://docs.langinfra.org/examples/how-upload-examples",
+                                "value": "http://docs-langinfra.khulnasoft.com/examples/how-upload-examples",
                                 "password": false,
                                 "name": "web_path",
                                 "display_name": "Web Page",

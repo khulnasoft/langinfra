@@ -32,7 +32,7 @@ import { useShortcutsStore } from "@/stores/shortcuts";
 import { cn } from "@/utils/utils";
 import { useQueryClient } from "@tanstack/react-query";
 
-export const MenuBar = ({}: {}): JSX.Element => {
+export const MenuBar = ({ }: {}): JSX.Element => {
   const shortcuts = useShortcutsStore((state) => state.shortcuts);
   const addFlow = useAddFlow();
   const setErrorData = useAlertStore((state) => state.setErrorData);
@@ -115,7 +115,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
 
   return currentFlow && onFlowPage ? (
     <div className="flex items-center justify-center gap-2 truncate">
-      <div className="header-menu-bar hidden justify-end truncate md:flex">
+      <div className="header-menu-bar hidden w-20 max-w-fit grow justify-end truncate md:flex">
         {currentFolder?.name && (
           <div className="hidden truncate md:flex">
             <div
@@ -137,7 +137,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
         /
       </div>
 
-      <div className="w-fit overflow-hidden truncate text-sm sm:whitespace-normal lg:flex-shrink-0">
+      <div className="overflow-hidden truncate text-sm sm:whitespace-normal">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <div className="header-menu-bar-display-2 group truncate">
@@ -305,9 +305,9 @@ export const MenuBar = ({}: {}): JSX.Element => {
               SAVED_HOVER +
               (updatedAt
                 ? new Date(updatedAt).toLocaleString("en-US", {
-                    hour: "numeric",
-                    minute: "numeric",
-                  })
+                  hour: "numeric",
+                  minute: "numeric",
+                })
                 : "Never")
             ) : (
               <div className="flex w-48 flex-col gap-1 py-1">
@@ -316,7 +316,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
                 </h2>
                 <p className="text-muted-foreground">
                   <a
-                    href="https://docs.langinfra.org/configuration-auto-saving"
+                    href="https://docs-langinfra.khulnasoft.com/configuration-auto-saving"
                     className="text-primary underline"
                   >
                     Enable auto-saving
@@ -336,7 +336,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
               </div>
             </div>
             <button
-              data-testid="stop_building_button "
+              data-testid="stop_building_button"
               disabled={!isBuilding}
               onClick={(_) => {
                 if (isBuilding) {

@@ -9,19 +9,19 @@ import { GetCodeType } from "@/types/tweaks";
  * @returns {string} - The python code
  */
 export default function getPythonApiCode({
-  flowId,
-  tweaksBuildedObject,
-  endpointName,
-  activeTweaks,
+    flowId,
+    tweaksBuildedObject,
+    endpointName,
+    activeTweaks,
 }: GetCodeType): string {
-  let tweaksString = "{}";
-  if (tweaksBuildedObject)
-    tweaksString = JSON.stringify(tweaksBuildedObject, null, 2)
-      .replace(/true/g, "True")
-      .replace(/false/g, "False")
-      .replace(/null|undefined/g, "None");
+    let tweaksString = "{}";
+    if (tweaksBuildedObject)
+        tweaksString = JSON.stringify(tweaksBuildedObject, null, 2)
+            .replace(/true/g, "True")
+            .replace(/false/g, "False")
+            .replace(/null|undefined/g, "None");
 
-  return `import argparse
+    return `import argparse
 import json
 from argparse import RawTextHelpFormatter
 import requests
@@ -35,11 +35,10 @@ except ImportError:
 
 BASE_API_URL = "${window.location.protocol}//${window.location.host}"
 FLOW_ID = "${flowId}"
-ENDPOINT = "${endpointName || ""}" ${
-    endpointName
-      ? `# The endpoint name of the flow`
-      : `# You can set a specific endpoint name in the flow settings`
-  }
+ENDPOINT = "${endpointName || ""}" ${endpointName
+            ? `# The endpoint name of the flow`
+            : `# You can set a specific endpoint name in the flow settings`
+        }
 
 # You can tweak the flow by adding a tweaks dictionary
 # e.g {"OpenAI-XXXXX": {"model_name": "gpt-4"}}

@@ -28,8 +28,8 @@ export default function EditShortcutButton({
   let shortcutInitialValue =
     defaultShortcuts.length > 0
       ? defaultShortcuts.find(
-          (s) => toCamelCase(s.name) === toCamelCase(shortcut[0]),
-        )?.shortcut
+        (s) => toCamelCase(s.name) === toCamelCase(shortcut[0]),
+      )?.shortcut
       : "";
   const [key, setKey] = useState<string | null>(null);
   const setSuccessData = useAlertStore((state) => state.setSuccessData);
@@ -107,9 +107,8 @@ export default function EditShortcutButton({
     if (oldKey === null) {
       return `${key.length > 0 ? toTitleCase(key) : toTitleCase(key)}`;
     }
-    return `${
-      oldKey.length > 0 ? toTitleCase(oldKey) : oldKey.toUpperCase()
-    } + ${key.length > 0 ? toTitleCase(key) : key.toUpperCase()}`;
+    return `${oldKey.length > 0 ? toTitleCase(oldKey) : oldKey.toUpperCase()
+      } + ${key.length > 0 ? toTitleCase(key) : key.toUpperCase()}`;
   }
 
   function checkForKeys(keys: string, keyToCompare: string): boolean {

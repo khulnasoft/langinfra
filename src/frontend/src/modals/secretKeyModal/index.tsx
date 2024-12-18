@@ -57,7 +57,7 @@ export default function SecretKeyModal({
       .then((res) => {
         setApiKeyValue(res["api_key"]);
       })
-      .catch((err) => {});
+      .catch((err) => { });
   }
 
   function handleSubmitForm() {
@@ -112,6 +112,7 @@ export default function SecretKeyModal({
                 onClick={() => {
                   handleCopyClick();
                 }}
+                data-testid="btn-copy-api-key"
                 unstyled
               >
                 {textCopied ? (

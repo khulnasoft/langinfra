@@ -305,7 +305,10 @@
                   "_type": "initialize_agent"
                 },
                 "description": "Construct a zero shot agent from an LLM and tools.",
-                "base_classes": ["AgentExecutor", "function"],
+                "base_classes": [
+                  "AgentExecutor",
+                  "function"
+                ],
                 "display_name": "AgentInitializer"
               },
               "id": "AgentInitializer-QiQ4x",
@@ -369,7 +372,9 @@
                   "_type": "PythonFunctionTool"
                 },
                 "description": "Python function to be executed.",
-                "base_classes": ["Tool"],
+                "base_classes": [
+                  "Tool"
+                ],
                 "display_name": "PythonFunctionTool"
               },
               "id": "PythonFunctionTool-kX99N",
@@ -429,7 +434,9 @@
             "selected": false,
             "data": {
               "sourceHandle": {
-                "baseClasses": ["Tool"],
+                "baseClasses": [
+                  "Tool"
+                ],
                 "dataType": "PythonFunctionTool",
                 "id": "PythonFunctionTool-kX99N"
               },
@@ -815,7 +822,10 @@
                   "_type": "initialize_agent"
                 },
                 "description": "Construct a zero shot agent from an LLM and tools.",
-                "base_classes": ["AgentExecutor", "function"],
+                "base_classes": [
+                  "AgentExecutor",
+                  "function"
+                ],
                 "display_name": "AgentInitializer"
               },
               "id": "AgentInitializer-YJgqs",
@@ -879,7 +889,9 @@
                   "_type": "PythonFunctionTool"
                 },
                 "description": "Python function to be executed.",
-                "base_classes": ["Tool"],
+                "base_classes": [
+                  "Tool"
+                ],
                 "display_name": "PythonFunctionTool"
               },
               "id": "PythonFunctionTool-gqQDg",
@@ -939,7 +951,9 @@
             "selected": false,
             "data": {
               "sourceHandle": {
-                "baseClasses": ["Tool"],
+                "baseClasses": [
+                  "Tool"
+                ],
                 "dataType": "PythonFunctionTool",
                 "id": "PythonFunctionTool-gqQDg"
               },
@@ -1325,7 +1339,10 @@
                   "_type": "initialize_agent"
                 },
                 "description": "Construct a zero shot agent from an LLM and tools.",
-                "base_classes": ["AgentExecutor", "function"],
+                "base_classes": [
+                  "AgentExecutor",
+                  "function"
+                ],
                 "display_name": "AgentInitializer"
               },
               "id": "AgentInitializer-grV0u",
@@ -1389,7 +1406,9 @@
                   "_type": "PythonFunctionTool"
                 },
                 "description": "Python function to be executed.",
-                "base_classes": ["Tool"],
+                "base_classes": [
+                  "Tool"
+                ],
                 "display_name": "PythonFunctionTool"
               },
               "id": "PythonFunctionTool-SctM2",
@@ -1449,7 +1468,9 @@
             "selected": false,
             "data": {
               "sourceHandle": {
-                "baseClasses": ["Tool"],
+                "baseClasses": [
+                  "Tool"
+                ],
                 "dataType": "PythonFunctionTool",
                 "id": "PythonFunctionTool-SctM2"
               },
@@ -2189,7 +2210,10 @@
                   "_type": "initialize_agent"
                 },
                 "description": "Construct a zero shot agent from an LLM and tools.",
-                "base_classes": ["AgentExecutor", "function"],
+                "base_classes": [
+                  "AgentExecutor",
+                  "function"
+                ],
                 "display_name": "AgentInitializer"
               },
               "id": "AgentInitializer-EE8R4",
@@ -2253,7 +2277,9 @@
                   "_type": "PythonFunctionTool"
                 },
                 "description": "Python function to be executed.",
-                "base_classes": ["Tool"],
+                "base_classes": [
+                  "Tool"
+                ],
                 "display_name": "PythonFunctionTool"
               },
               "id": "PythonFunctionTool-YKkDL",
@@ -2313,7 +2339,9 @@
             "selected": false,
             "data": {
               "sourceHandle": {
-                "baseClasses": ["Tool"],
+                "baseClasses": [
+                  "Tool"
+                ],
                 "dataType": "PythonFunctionTool",
                 "id": "PythonFunctionTool-YKkDL"
               },
@@ -2699,7 +2727,10 @@
                   "_type": "initialize_agent"
                 },
                 "description": "Construct a zero shot agent from an LLM and tools.",
-                "base_classes": ["AgentExecutor", "function"],
+                "base_classes": [
+                  "AgentExecutor",
+                  "function"
+                ],
                 "display_name": "AgentInitializer"
               },
               "id": "AgentInitializer-goPm2",
@@ -2763,7 +2794,9 @@
                   "_type": "PythonFunctionTool"
                 },
                 "description": "Python function to be executed.",
-                "base_classes": ["Tool"],
+                "base_classes": [
+                  "Tool"
+                ],
                 "display_name": "PythonFunctionTool"
               },
               "id": "PythonFunctionTool-SQikY",
@@ -2823,7 +2856,9 @@
             "selected": false,
             "data": {
               "sourceHandle": {
-                "baseClasses": ["Tool"],
+                "baseClasses": [
+                  "Tool"
+                ],
                 "dataType": "PythonFunctionTool",
                 "id": "PythonFunctionTool-SQikY"
               },

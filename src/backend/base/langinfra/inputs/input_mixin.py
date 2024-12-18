@@ -12,7 +12,7 @@ from pydantic import (
 
 from langinfra.field_typing.range_spec import RangeSpec
 from langinfra.inputs.validators import CoalesceBool
-from langinfra.schema.table import Column, TableSchema
+from langinfra.schema.table import Column, TableOptions, TableSchema
 
 
 class FieldTypes(str, Enum):
@@ -184,6 +184,9 @@ class SliderMixin(BaseModel):
 
 class TableMixin(BaseModel):
     table_schema: TableSchema | list[Column] | None = None
+    trigger_text: str = Field(default="Open table")
+    trigger_icon: str = Field(default="Table")
+    table_options: TableOptions | None = None
 
     @field_validator("table_schema")
     @classmethod

@@ -182,8 +182,8 @@ const HomePage = ({ type }) => {
         openModal={newProjectModal}
         setOpenModal={setNewProjectModal}
         openDeleteFolderModal={false}
-        setOpenDeleteFolderModal={() => {}}
-        handleDeleteFolder={() => {}}
+        setOpenDeleteFolderModal={() => { }}
+        handleDeleteFolder={() => { }}
       />
     </CardsWrapComponent>
   );

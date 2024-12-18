@@ -20,8 +20,8 @@ export class Network extends Construct {
 
   constructor(scope: Construct, id: string) {
     super(scope, id)
-    const alb_listen_port=80
-    const back_service_port=7860
+    const alb_listen_port = 80
+    const back_service_port = 7860
 
     // VPC等リソースの作成
     this.vpc = new ec2.Vpc(scope, 'VPC', {
@@ -55,11 +55,11 @@ export class Network extends Construct {
       vpc: this.vpc,
     })
 
-    this.alb = new elb.ApplicationLoadBalancer(this,'langinfra-alb',{
+    this.alb = new elb.ApplicationLoadBalancer(this, 'langinfra-alb', {
       internetFacing: true, //インターネットからのアクセスを許可するかどうか指定
       loadBalancerName: 'langinfra-alb',
       securityGroup: this.albSG, //作成したセキュリティグループを割り当てる
-      vpc:this.vpc,
+      vpc: this.vpc,
     })
 
     const listener = this.alb.addListener('Listener', { port: alb_listen_port });
@@ -91,7 +91,7 @@ export class Network extends Construct {
       description: 'for langinfra-back-ecs',
       vpc: this.vpc,
     })
-    this.ecsBackSG.addIngressRule(this.albSG,ec2.Port.tcp(back_service_port))
+    this.ecsBackSG.addIngressRule(this.albSG, ec2.Port.tcp(back_service_port))
 
     // RDSに設定するセキュリティグループ
     this.dbSG = new ec2.SecurityGroup(scope, 'DBSecurityGroup', {

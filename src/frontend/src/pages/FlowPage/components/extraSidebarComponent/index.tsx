@@ -207,9 +207,8 @@ export default function ExtraSidebar(): JSX.Element {
         >
           <IconComponent
             name={search ? "X" : "Search"}
-            className={`h-5 w-5 stroke-[1.5] text-primary ${
-              search ? "cursor-pointer" : "cursor-default"
-            }`}
+            className={`h-5 w-5 stroke-[1.5] text-primary ${search ? "cursor-pointer" : "cursor-default"
+              }`}
             aria-hidden="true"
           />
         </div>

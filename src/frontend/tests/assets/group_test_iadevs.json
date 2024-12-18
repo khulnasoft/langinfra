@@ -5,7 +5,10 @@
       {
         "id": "GroupNode-7oRzc",
         "type": "genericNode",
-        "position": { "x": 3397.942946831683, "y": 636.4111672321256 },
+        "position": {
+          "x": 3397.942946831683,
+          "y": 636.4111672321256
+        },
         "data": {
           "id": "GroupNode-7oRzc",
           "type": "GroupNode",
@@ -45,12 +48,17 @@
                 "name": "client",
                 "display_name": "Client",
                 "advanced": true,
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "dynamic": false,
                 "info": "",
                 "title_case": false,
                 "type": "str",
-                "proxy": { "id": "OpenAIEmbeddings-FBKdM", "field": "client" }
+                "proxy": {
+                  "id": "OpenAIEmbeddings-FBKdM",
+                  "field": "client"
+                }
               },
               "code_OpenAIEmbeddings-B5dsW": {
                 "type": "code",
@@ -70,7 +78,10 @@
                 "load_from_db": false,
                 "title_case": false,
                 "display_name": "code",
-                "proxy": { "id": "OpenAIEmbeddings-FBKdM", "field": "code" }
+                "proxy": {
+                  "id": "OpenAIEmbeddings-FBKdM",
+                  "field": "code"
+                }
               },
               "default_headers_OpenAIEmbeddings-B5dsW": {
                 "trace_as_input": true,
@@ -122,7 +133,9 @@
                 "name": "deployment",
                 "display_name": "Deployment",
                 "advanced": true,
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "dynamic": false,
                 "info": "",
                 "title_case": false,
@@ -188,7 +201,10 @@
                 "info": "",
                 "title_case": false,
                 "type": "str",
-                "proxy": { "id": "OpenAIEmbeddings-FBKdM", "field": "model" }
+                "proxy": {
+                  "id": "OpenAIEmbeddings-FBKdM",
+                  "field": "model"
+                }
               },
               "model_kwargs_OpenAIEmbeddings-B5dsW": {
                 "trace_as_input": true,
@@ -281,7 +297,9 @@
                 "name": "openai_api_version",
                 "display_name": "OpenAI API Version",
                 "advanced": true,
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "dynamic": false,
                 "info": "",
                 "title_case": false,
@@ -303,7 +321,9 @@
                 "name": "openai_organization",
                 "display_name": "OpenAI Organization",
                 "advanced": true,
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "dynamic": false,
                 "info": "",
                 "title_case": false,
@@ -325,7 +345,9 @@
                 "name": "openai_proxy",
                 "display_name": "OpenAI Proxy",
                 "advanced": true,
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "dynamic": false,
                 "info": "",
                 "title_case": false,
@@ -423,7 +445,9 @@
                 "name": "tiktoken_model_name",
                 "display_name": "TikToken Model Name",
                 "advanced": true,
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "dynamic": false,
                 "info": "",
                 "title_case": false,
@@ -497,7 +521,10 @@
                 "load_from_db": false,
                 "title_case": false,
                 "display_name": "code",
-                "proxy": { "id": "CustomComponent-L1VfC", "field": "code" }
+                "proxy": {
+                  "id": "CustomComponent-L1VfC",
+                  "field": "code"
+                }
               },
               "input_message_CustomComponent-63VyB": {
                 "trace_as_input": true,
@@ -511,7 +538,9 @@
                 "name": "input_message",
                 "display_name": "Input Message",
                 "advanced": false,
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "dynamic": false,
                 "info": "The message to pass through.",
                 "title_case": false,
@@ -539,7 +568,10 @@
                 "load_from_db": false,
                 "title_case": false,
                 "display_name": "code",
-                "proxy": { "id": "ParseData-Dmlks", "field": "code" }
+                "proxy": {
+                  "id": "ParseData-Dmlks",
+                  "field": "code"
+                }
               },
               "sep_ParseData-M2bQq": {
                 "trace_as_metadata": true,
@@ -556,7 +588,10 @@
                 "info": "",
                 "title_case": false,
                 "type": "str",
-                "proxy": { "id": "ParseData-Dmlks", "field": "sep" }
+                "proxy": {
+                  "id": "ParseData-Dmlks",
+                  "field": "sep"
+                }
               },
               "template_ParseData-M2bQq": {
                 "trace_as_input": true,
@@ -571,12 +606,17 @@
                 "name": "template",
                 "display_name": "Template",
                 "advanced": true,
-                "input_types": ["Message"],
+                "input_types": [
+                  "Message"
+                ],
                 "dynamic": false,
                 "info": "The template to use for formatting the data. It can contain the keys {text}, {data} or any other key in the Data.",
                 "title_case": false,
                 "type": "str",
-                "proxy": { "id": "ParseData-Dmlks", "field": "template" }
+                "proxy": {
+                  "id": "ParseData-Dmlks",
+                  "field": "template"
+                }
               }
             },
             "flow": {
@@ -621,7 +661,9 @@
                             "name": "client",
                             "display_name": "Client",
                             "advanced": true,
-                            "input_types": ["Message"],
+                            "input_types": [
+                              "Message"
+                            ],
                             "dynamic": false,
                             "info": "",
                             "title_case": false,
@@ -688,7 +730,9 @@
                             "name": "deployment",
                             "display_name": "Deployment",
                             "advanced": true,
-                            "input_types": ["Message"],
+                            "input_types": [
+                              "Message"
+                            ],
                             "dynamic": false,
                             "info": "",
                             "title_case": false,
@@ -818,7 +862,9 @@
                             "name": "openai_api_version",
                             "display_name": "OpenAI API Version",
                             "advanced": true,
-                            "input_types": ["Message"],
+                            "input_types": [
+                              "Message"
+                            ],
                             "dynamic": false,
                             "info": "",
                             "title_case": false,
@@ -836,7 +882,9 @@
                             "name": "openai_organization",
                             "display_name": "OpenAI Organization",
                             "advanced": true,
-                            "input_types": ["Message"],
+                            "input_types": [
+                              "Message"
+                            ],
                             "dynamic": false,
                             "info": "",
                             "title_case": false,
@@ -854,7 +902,9 @@
                             "name": "openai_proxy",
                             "display_name": "OpenAI Proxy",
                             "advanced": true,
-                            "input_types": ["Message"],
+                            "input_types": [
+                              "Message"
+                            ],
                             "dynamic": false,
                             "info": "",
                             "title_case": false,
@@ -932,7 +982,9 @@
                             "name": "tiktoken_model_name",
                             "display_name": "TikToken Model Name",
                             "advanced": true,
-                            "input_types": ["Message"],
+                            "input_types": [
+                              "Message"
+                            ],
                             "dynamic": false,
                             "info": "",
                             "title_case": false,
@@ -941,7 +993,9 @@
                         },
                         "description": "Generate embeddings using OpenAI models.",
                         "icon": "OpenAI",
-                        "base_classes": ["Embeddings"],
+                        "base_classes": [
+                          "Embeddings"
+                        ],
                         "display_name": "OpenAI Embeddings",
                         "documentation": "",
                         "custom_fields": {},
@@ -951,7 +1005,9 @@
                         "frozen": false,
                         "outputs": [
                           {
-                            "types": ["Embeddings"],
+                            "types": [
+                              "Embeddings"
+                            ],
                             "selected": "Embeddings",
                             "name": "embeddings",
                             "display_name": "Embeddings",
@@ -1019,7 +1075,9 @@
                             "name": "embedding",
                             "display_name": "Embedding Model",
                             "advanced": false,
-                            "input_types": ["Embeddings"],
+                            "input_types": [
+                              "Embeddings"
+                            ],
                             "dynamic": false,
                             "info": "Model to generate embeddings for the texts.",
                             "title_case": false,
@@ -1055,7 +1113,9 @@
                             "name": "text1",
                             "display_name": "Text 1",
                             "advanced": false,
-                            "input_types": ["Message"],
+                            "input_types": [
+                              "Message"
+                            ],
                             "dynamic": false,
                             "info": "First text input for similarity calculation.",
                             "title_case": false,
@@ -1064,7 +1124,9 @@
                         },
                         "description": "Calculates cosine similarity between two texts.",
                         "icon": "cosine",
-                        "base_classes": ["Data"],
+                        "base_classes": [
+                          "Data"
+                        ],
                         "display_name": "Cosine Similarity",
                         "documentation": "",
                         "custom_fields": {},
@@ -1074,7 +1136,9 @@
                         "frozen": false,
                         "outputs": [
                           {
-                            "types": ["Data"],
+                            "types": [
+                              "Data"
+                            ],
                             "selected": "Data",
                             "name": "cosine_similarity",
                             "display_name": "Cosine Similarity",
@@ -1084,7 +1148,10 @@
                             "hidden": false
                           }
                         ],
-                        "field_order": ["text1", "embedding"],
+                        "field_order": [
+                          "text1",
+                          "embedding"
+                        ],
                         "beta": false,
                         "edited": true
                       },
@@ -1124,7 +1191,9 @@
                             "name": "llm_score",
                             "display_name": "LLM Score",
                             "advanced": false,
-                            "input_types": ["Data"],
+                            "input_types": [
+                              "Data"
+                            ],
                             "dynamic": false,
                             "info": "Initial LLM score.",
                             "title_case": false,
@@ -1161,7 +1230,9 @@
                             "name": "resposta",
                             "display_name": "Resposta",
                             "advanced": false,
-                            "input_types": ["Message"],
+                            "input_types": [
+                              "Message"
+                            ],
                             "dynamic": false,
                             "info": "Response text for the score calculation.",
                             "title_case": false,
@@ -1170,7 +1241,9 @@
                         },
                         "description": "Calculates a score based on the initial LLM score and the length of the response.",
                         "icon": "calculator",
-                        "base_classes": ["Data"],
+                        "base_classes": [
+                          "Data"
+                        ],
                         "display_name": "Custom Component",
                         "documentation": "",
                         "custom_fields": {},
@@ -1180,7 +1253,9 @@
                         "frozen": false,
                         "outputs": [
                           {
-                            "types": ["Data"],
+                            "types": [
+                              "Data"
+                            ],
                             "selected": "Data",
                             "name": "final_score",
                             "display_name": "Final Score",
@@ -1190,7 +1265,10 @@
                             "hidden": false
                           }
                         ],
-                        "field_order": ["llm_score", "resposta"],
+                        "field_order": [
+                          "llm_score",
+                          "resposta"
+                        ],
                         "beta": false,
                         "edited": true
                       },
@@ -1250,7 +1328,9 @@
                             "name": "input_message",
                             "display_name": "Input Message",
                             "advanced": false,
-                            "input_types": ["Message"],
+                            "input_types": [
+                              "Message"
+                            ],
                             "dynamic": false,
                             "info": "The message to pass through.",
                             "title_case": false,
@@ -1259,7 +1339,9 @@
                         },
                         "description": "Passes a message through without any modifications.",
                         "icon": "message",
-                        "base_classes": ["Message"],
+                        "base_classes": [
+                          "Message"
+                        ],
                         "display_name": "Message",
                         "documentation": "",
                         "custom_fields": {},
@@ -1269,7 +1351,9 @@
                         "frozen": false,
                         "outputs": [
                           {
-                            "types": ["Message"],
+                            "types": [
+                              "Message"
+                            ],
                             "selected": "Message",
                             "name": "output_message",
                             "display_name": "Output Message",
@@ -1279,7 +1363,9 @@
                             "hidden": false
                           }
                         ],
-                        "field_order": ["input_message"],
+                        "field_order": [
+                          "input_message"
+                        ],
                         "beta": false,
                         "edited": true
                       },
@@ -1319,7 +1405,9 @@
                             "name": "data",
                             "display_name": "Data",
                             "advanced": false,
-                            "input_types": ["Data"],
+                            "input_types": [
+                              "Data"
+                            ],
                             "dynamic": false,
                             "info": "The data to convert to text.",
                             "title_case": false,
@@ -1373,7 +1461,9 @@
                             "name": "template",
                             "display_name": "Template",
                             "advanced": false,
-                            "input_types": ["Message"],
+                            "input_types": [
+                              "Message"
+                            ],
                             "dynamic": false,
                             "info": "The template to use for formatting the data. It can contain the keys {text}, {data} or any other key in the Data.",
                             "title_case": false,
@@ -1382,7 +1472,9 @@
                         },
                         "description": "Convert Data into plain text following a specified template.",
                         "icon": "braces",
-                        "base_classes": ["Message"],
+                        "base_classes": [
+                          "Message"
+                        ],
                         "display_name": "Parse Data",
                         "documentation": "",
                         "custom_fields": {},
@@ -1392,7 +1484,9 @@
                         "frozen": false,
                         "outputs": [
                           {
-                            "types": ["Message"],
+                            "types": [
+                              "Message"
+                            ],
                             "selected": "Message",
                             "name": "text",
                             "display_name": "Text",
@@ -1402,7 +1496,11 @@
                             "hidden": false
                           }
                         ],
-                        "field_order": ["data", "template", "sep"],
+                        "field_order": [
+                          "data",
+                          "template",
+                          "sep"
+                        ],
                         "beta": false,
                         "edited": false
                       },
@@ -1428,14 +1526,18 @@
                       "targetHandle": {
                         "fieldName": "embedding",
                         "id": "CosineSimilarityComponent-gTpVs",
-                        "inputTypes": ["Embeddings"],
+                        "inputTypes": [
+                          "Embeddings"
+                        ],
                         "type": "other"
                       },
                       "sourceHandle": {
                         "dataType": "OpenAIEmbeddings",
                         "id": "OpenAIEmbeddings-FBKdM",
                         "name": "embeddings",
-                        "output_types": ["Embeddings"]
+                        "output_types": [
+                          "Embeddings"
+                        ]
                       }
                     },
                     "id": "reactflow__edge-OpenAIEmbeddings-FBKdM{œdataTypeœ:œOpenAIEmbeddingsœ,œidœ:œOpenAIEmbeddings-FBKdMœ,œnameœ:œembeddingsœ,œoutput_typesœ:[œEmbeddingsœ]}-CosineSimilarityComponent-gTpVs{œfieldNameœ:œembeddingœ,œidœ:œCosineSimilarityComponent-gTpVsœ,œinputTypesœ:[œEmbeddingsœ],œtypeœ:œotherœ}",
@@ -1450,14 +1552,18 @@
                       "targetHandle": {
                         "fieldName": "text1",
                         "id": "CosineSimilarityComponent-gTpVs",
-                        "inputTypes": ["Message"],
+                        "inputTypes": [
+                          "Message"
+                        ],
                         "type": "str"
                       },
                       "sourceHandle": {
                         "dataType": "CustomComponent",
                         "id": "CustomComponent-L1VfC",
                         "name": "output_message",
-                        "output_types": ["Message"]
+                        "output_types": [
+                          "Message"
+                        ]
                       }
                     },
                     "id": "reactflow__edge-CustomComponent-L1VfC{œdataTypeœ:œCustomComponentœ,œidœ:œCustomComponent-L1VfCœ,œnameœ:œoutput_messageœ,œoutput_typesœ:[œMessageœ]}-CosineSimilarityComponent-gTpVs{œfieldNameœ:œtext1œ,œidœ:œCosineSimilarityComponent-gTpVsœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
@@ -1472,14 +1578,18 @@
                       "targetHandle": {
                         "fieldName": "resposta",
                         "id": "ScoreCalculatorComponent-FxmjI",
-                        "inputTypes": ["Message"],
+                        "inputTypes": [
+                          "Message"
+                        ],
                         "type": "str"
                       },
                       "sourceHandle": {
                         "dataType": "CustomComponent",
                         "id": "CustomComponent-L1VfC",
                         "name": "output_message",
-                        "output_types": ["Message"]
+                        "output_types": [
+                          "Message"
+                        ]
                       }
                     },
                     "id": "reactflow__edge-CustomComponent-L1VfC{œdataTypeœ:œCustomComponentœ,œidœ:œCustomComponent-L1VfCœ,œnameœ:œoutput_messageœ,œoutput_typesœ:[œMessageœ]}-ScoreCalculatorComponent-FxmjI{œfieldNameœ:œrespostaœ,œidœ:œScoreCalculatorComponent-FxmjIœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
@@ -1494,14 +1604,18 @@
                       "targetHandle": {
                         "fieldName": "data",
                         "id": "ParseData-Dmlks",
-                        "inputTypes": ["Data"],
+                        "inputTypes": [
+                          "Data"
+                        ],
                         "type": "other"
                       },
                       "sourceHandle": {
                         "dataType": "ScoreCalculatorComponent",
                         "id": "ScoreCalculatorComponent-FxmjI",
                         "name": "final_score",
-                        "output_types": ["Data"]
+                        "output_types": [
+                          "Data"
+                        ]
                       }
                     },
                     "id": "reactflow__edge-ScoreCalculatorComponent-FxmjI{œdataTypeœ:œScoreCalculatorComponentœ,œidœ:œScoreCalculatorComponent-FxmjIœ,œnameœ:œfinal_scoreœ,œoutput_typesœ:[œDataœ]}-ParseData-Dmlks{œfieldNameœ:œdataœ,œidœ:œParseData-Dmlksœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}",
@@ -1516,21 +1630,29 @@
                       "targetHandle": {
                         "fieldName": "llm_score",
                         "id": "ScoreCalculatorComponent-FxmjI",
-                        "inputTypes": ["Data"],
+                        "inputTypes": [
+                          "Data"
+                        ],
                         "type": "other"
                       },
                       "sourceHandle": {
                         "dataType": "CosineSimilarityComponent",
                         "id": "CosineSimilarityComponent-gTpVs",
                         "name": "cosine_similarity",
-                        "output_types": ["Data"]
+                        "output_types": [
+                          "Data"
+                        ]
                       }
                     },
                     "id": "reactflow__edge-CosineSimilarityComponent-gTpVs{œdataTypeœ:œCosineSimilarityComponentœ,œidœ:œCosineSimilarityComponent-gTpVsœ,œnameœ:œcosine_similarityœ,œoutput_typesœ:[œDataœ]}-ScoreCalculatorComponent-FxmjI{œfieldNameœ:œllm_scoreœ,œidœ:œScoreCalculatorComponent-FxmjIœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}",
                     "selected": true
                   }
                 ],
-                "viewport": { "zoom": 1, "x": 0, "y": 0 }
+                "viewport": {
+                  "zoom": 1,
+                  "x": 0,
+                  "y": 0
+                }
               },
               "is_component": false,
               "name": "Loving Euler",
@@ -1539,7 +1661,9 @@
             },
             "outputs": [
               {
-                "types": ["Message"],
+                "types": [
+                  "Message"
+                ],
                 "selected": "Message",
                 "name": "ParseData-M2bQq_text",
                 "display_name": "Text",

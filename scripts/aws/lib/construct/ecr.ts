@@ -9,7 +9,7 @@ import { Construct } from 'constructs'
 
 
 interface ECRProps {
-  arch:ecs.CpuArchitecture;
+  arch: ecs.CpuArchitecture;
 }
 
 export class EcrRepository extends Construct {
@@ -20,7 +20,7 @@ export class EcrRepository extends Construct {
 
     const imagePlatform = props.arch == ecs.CpuArchitecture.ARM64 ? Platform.LINUX_ARM64 : Platform.LINUX_AMD64
     const backendPath = path.join(__dirname, "../../../../../", "langinfra")
-    const excludeDir = ['node_modules','.git', 'cdk.out']
+    const excludeDir = ['node_modules', '.git', 'cdk.out']
     const LifecycleRule = {
       tagStatus: ecr.TagStatus.ANY,
       description: 'Delete more than 30 image',
@@ -39,7 +39,7 @@ export class EcrRepository extends Construct {
     // Create Docker Image Asset
     const dockerBackEndImageAsset = new DockerImageAsset(this, "DockerBackEndImageAsset", {
       directory: backendPath,
-      file:"cdk.Dockerfile",
+      file: "cdk.Dockerfile",
       exclude: excludeDir,
       platform: imagePlatform,
     });

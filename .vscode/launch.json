@@ -7,7 +7,6 @@
       "request": "launch",
       "module": "uvicorn",
       "preLaunchTask": "Install Backend",
-
       "args": [
         "--factory",
         "langinfra.main:create_app",
@@ -72,7 +71,9 @@
       "type": "debugpy",
       "request": "launch",
       "program": "${file}",
-      "purpose": ["debug-test"],
+      "purpose": [
+        "debug-test"
+      ],
       "console": "integratedTerminal",
       "justMyCode": false
     }

@@ -1,4 +1,4 @@
-FROM langinfraai/backend_build as backend_build
+FROM khulnasoft/backend_build as backend_build
 
 FROM python:3.10-slim
 WORKDIR /app

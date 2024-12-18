@@ -12,7 +12,7 @@ Join the [Langinfra Discord Server](https://discord.gg/EqksyE2EX9) to ask questi
 
 ## Follow Langinfra on X
 
-Follow [@langinfra_ai](https://twitter.com/langinfra_ai) on X to get the latest news about Langinfra.
+Follow [@langinfra_ai](https://twitter.com/khulnasoft) on X to get the latest news about Langinfra.
 
 ## Star Langinfra on GitHub
 

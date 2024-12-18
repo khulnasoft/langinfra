@@ -35,9 +35,9 @@ export function SaveChangesModal({
         autoSave
           ? undefined
           : () => {
-              setSaving(true);
-              onSave();
-            }
+            setSaving(true);
+            onSave();
+          }
       }
       onCancel={onProceed}
       loading={autoSave ? true : saving}
@@ -59,7 +59,7 @@ export function SaveChangesModal({
             <a
               target="_blank"
               className="underline"
-              href="https://docs.langinfra.org/configuration-auto-saving"
+              href="https://docs-langinfra.khulnasoft.com/configuration-auto-saving"
             >
               Enable auto-saving
             </a>{" "}
