@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD030 -->
 
-# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.org)
+# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.khulnasoft.com)
 
 <p align="center"><strong>
     一种用于构建多智能体和RAG应用的可视化框架

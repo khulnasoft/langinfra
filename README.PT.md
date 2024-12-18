@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD030 -->
 
-# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.org)
+# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.khulnasoft.com)
 
 <p align="center"><strong>
     Um framework visual para criar apps de agentes autônomos e RAG
