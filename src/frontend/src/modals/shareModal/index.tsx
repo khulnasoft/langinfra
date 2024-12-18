@@ -209,8 +209,9 @@ export default function ShareModal({
           {children ? children : <></>}
         </BaseModal.Trigger>
         <BaseModal.Header
-          description={`Publish ${is_component ? "your component" : "workflow"
-            } to the Langinfra Store.`}
+          description={`Publish ${
+            is_component ? "your component" : "workflow"
+          } to the Langinfra Store.`}
         >
           <span className="pr-2">Share</span>
           <IconComponent

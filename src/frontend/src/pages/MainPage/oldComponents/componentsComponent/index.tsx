@@ -105,7 +105,7 @@ export default function ComponentsComponent({
     setValue,
   );
 
-  const handleDuplicate = () => { };
+  const handleDuplicate = () => {};
 
   const { mutate: mutateDownloadMultipleFlows } =
     usePostDownloadMultipleFlows();

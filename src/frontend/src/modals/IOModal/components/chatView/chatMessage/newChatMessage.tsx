@@ -170,13 +170,13 @@ export default function ChatMessage({
   const convertFiles = (
     files:
       | (
-        | string
-        | {
-          path: string;
-          type: string;
-          name: string;
-        }
-      )[]
+          | string
+          | {
+              path: string;
+              type: string;
+              name: string;
+            }
+        )[]
       | undefined,
   ) => {
     if (!files) return [];
@@ -694,35 +694,35 @@ export default function ChatMessage({
                     >
                       {promptOpen
                         ? template?.split("\n")?.map((line, index) => {
-                          const regex = /{([^}]+)}/g;
-                          let match;
-                          let parts: Array<JSX.Element | string> = [];
-                          let lastIndex = 0;
-                          while ((match = regex.exec(line)) !== null) {
-                            // Push text up to the match
-                            if (match.index !== lastIndex) {
-                              parts.push(
-                                line.substring(lastIndex, match.index),
-                              );
-                            }
-                            // Push div with matched text
-                            if (chat.message[match[1]]) {
-                              parts.push(
-                                <span className="chat-message-highlight">
-                                  {chat.message[match[1]]}
-                                </span>,
-                              );
-                            }
+                            const regex = /{([^}]+)}/g;
+                            let match;
+                            let parts: Array<JSX.Element | string> = [];
+                            let lastIndex = 0;
+                            while ((match = regex.exec(line)) !== null) {
+                              // Push text up to the match
+                              if (match.index !== lastIndex) {
+                                parts.push(
+                                  line.substring(lastIndex, match.index),
+                                );
+                              }
+                              // Push div with matched text
+                              if (chat.message[match[1]]) {
+                                parts.push(
+                                  <span className="chat-message-highlight">
+                                    {chat.message[match[1]]}
+                                  </span>,
+                                );
+                              }
 
-                            // Update last index
-                            lastIndex = regex.lastIndex;
-                          }
-                          // Push text after the last match
-                          if (lastIndex !== line.length) {
-                            parts.push(line.substring(lastIndex));
-                          }
-                          return <p>{parts}</p>;
-                        })
+                              // Update last index
+                              lastIndex = regex.lastIndex;
+                            }
+                            // Push text after the last match
+                            if (lastIndex !== line.length) {
+                              parts.push(line.substring(lastIndex));
+                            }
+                            return <p>{parts}</p>;
+                          })
                         : isEmpty
                           ? EMPTY_INPUT_SEND_MESSAGE
                           : chatMessage}
@@ -742,8 +742,9 @@ export default function ChatMessage({
                     ) : (
                       <>
                         <div
-                          className={`w-full items-baseline whitespace-pre-wrap break-words text-[14px] font-normal ${isEmpty ? "text-muted-foreground" : "text-primary"
-                            }`}
+                          className={`w-full items-baseline whitespace-pre-wrap break-words text-[14px] font-normal ${
+                            isEmpty ? "text-muted-foreground" : "text-primary"
+                          }`}
                           data-testid={`chat-message-${chat.sender_name}-${chatMessage}`}
                         >
                           {isEmpty ? EMPTY_INPUT_SEND_MESSAGE : decodedMessage}
@@ -770,7 +771,7 @@ export default function ChatMessage({
                   onCopy={() => {
                     navigator.clipboard.writeText(chatMessage);
                   }}
-                  onDelete={() => { }}
+                  onDelete={() => {}}
                   onEdit={() => setEditMessage(true)}
                   className="h-fit group-hover:visible"
                   isBotMessage={!chat.isSend}

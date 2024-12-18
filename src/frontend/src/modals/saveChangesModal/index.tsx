@@ -35,9 +35,9 @@ export function SaveChangesModal({
         autoSave
           ? undefined
           : () => {
-            setSaving(true);
-            onSave();
-          }
+              setSaving(true);
+              onSave();
+            }
       }
       onCancel={onProceed}
       loading={autoSave ? true : saving}
