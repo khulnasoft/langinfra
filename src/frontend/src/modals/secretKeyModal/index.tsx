@@ -57,7 +57,7 @@ export default function SecretKeyModal({
       .then((res) => {
         setApiKeyValue(res["api_key"]);
       })
-      .catch((err) => { });
+      .catch((err) => {});
   }
 
   function handleSubmitForm() {

@@ -15,10 +15,11 @@ export default function getWidgetCode({
   <langinfra-chat
     window_title="${flowName}"
     flow_id="${flowId}"
-    host_url="${window.location.protocol}//${window.location.host}"${!isAuth
-      ? `
+    host_url="${window.location.protocol}//${window.location.host}"${
+      !isAuth
+        ? `
     api_key="..."`
-      : ""
+        : ""
     }
 
   ></langinfra-chat>`;
