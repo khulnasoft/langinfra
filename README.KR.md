@@ -5,7 +5,7 @@
 
 <!-- markdownlint-disable MD030 -->
 
-# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.org)
+# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.khulnasoft.com)
 
 <p align="center"><strong>
     다중 에이전트 및 RAG 애플리케이션 구축을 위한 시각적 프레임워크

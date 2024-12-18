@@ -1,4 +1,4 @@
-# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.org)
+# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.khulnasoft.com)
 
 <p align="center"><strong>
     Un Framework visual para crear aplicaciones de agentes autónomos y RAG
