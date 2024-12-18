@@ -45,7 +45,11 @@ export const AccountMenu = () => {
             className="h-7 w-7 rounded-lg focus-visible:outline-0"
             data-testid="user-profile-settings"
           >
-            {ENABLE_DATASTAX_LANGINFRA ? <CustomProfileIcon /> : <ProfileIcon />}
+            {ENABLE_DATASTAX_LANGINFRA ? (
+              <CustomProfileIcon />
+            ) : (
+              <ProfileIcon />
+            )}
           </div>
         </HeaderMenuToggle>
         <HeaderMenuItems position="right">
@@ -89,7 +93,10 @@ export const AccountMenu = () => {
                 Feedback
               </HeaderMenuItemButton>
             ) : (
-              <HeaderMenuItemLink newPage href="https://docs-langinfra.khulnasoft.com">
+              <HeaderMenuItemLink
+                newPage
+                href="https://docs-langinfra.khulnasoft.com"
+              >
                 Docs
               </HeaderMenuItemLink>
             )}
