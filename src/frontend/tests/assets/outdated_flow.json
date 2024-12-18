@@ -101,7 +101,9 @@
             "base_classes": ["Message"],
             "beta": false,
             "conditional_paths": [],
-            "custom_fields": { "template": ["context", "user_message"] },
+            "custom_fields": {
+              "template": ["context", "user_message"]
+            },
             "description": "Create a prompt template with dynamic variables.",
             "display_name": "Prompt",
             "documentation": "",
@@ -207,8 +209,14 @@
         "dragging": false,
         "height": 517,
         "id": "Prompt-Xz9bN",
-        "position": { "x": 1880.8227904110583, "y": 625.8049209882275 },
-        "positionAbsolute": { "x": 1880.8227904110583, "y": 625.8049209882275 },
+        "position": {
+          "x": 1880.8227904110583,
+          "y": 625.8049209882275
+        },
+        "positionAbsolute": {
+          "x": 1880.8227904110583,
+          "y": 625.8049209882275
+        },
         "selected": false,
         "type": "genericNode",
         "width": 384
@@ -404,8 +412,14 @@
         "dragging": false,
         "height": 309,
         "id": "ChatInput-KovKB",
-        "position": { "x": 1275.9262193671882, "y": 836.1228056896347 },
-        "positionAbsolute": { "x": 1275.9262193671882, "y": 836.1228056896347 },
+        "position": {
+          "x": 1275.9262193671882,
+          "y": 836.1228056896347
+        },
+        "positionAbsolute": {
+          "x": 1275.9262193671882,
+          "y": 836.1228056896347
+        },
         "selected": false,
         "type": "genericNode",
         "width": 384
@@ -684,8 +698,14 @@
         "dragging": false,
         "height": 623,
         "id": "OpenAIModel-pqHDB",
-        "position": { "x": 2468.968379487559, "y": 560.0689522326683 },
-        "positionAbsolute": { "x": 2468.968379487559, "y": 560.0689522326683 },
+        "position": {
+          "x": 2468.968379487559,
+          "y": 560.0689522326683
+        },
+        "positionAbsolute": {
+          "x": 2468.968379487559,
+          "y": 560.0689522326683
+        },
         "selected": false,
         "type": "genericNode",
         "width": 384
@@ -856,7 +876,10 @@
         },
         "height": 385,
         "id": "ChatOutput-NasE4",
-        "position": { "x": 3083.1710516244116, "y": 701.521688846004 },
+        "position": {
+          "x": 3083.1710516244116,
+          "y": 701.521688846004
+        },
         "selected": false,
         "type": "genericNode",
         "width": 384
@@ -1060,8 +1083,14 @@
         "dragging": false,
         "height": 387,
         "id": "Memory-x4ENQ",
-        "position": { "x": 1301.98330242754, "y": 422.33865605652574 },
-        "positionAbsolute": { "x": 1301.98330242754, "y": 422.33865605652574 },
+        "position": {
+          "x": 1301.98330242754,
+          "y": 422.33865605652574
+        },
+        "positionAbsolute": {
+          "x": 1301.98330242754,
+          "y": 422.33865605652574
+        },
         "selected": false,
         "type": "genericNode",
         "width": 384

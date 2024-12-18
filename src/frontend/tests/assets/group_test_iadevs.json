@@ -5,7 +5,10 @@
       {
         "id": "GroupNode-7oRzc",
         "type": "genericNode",
-        "position": { "x": 3397.942946831683, "y": 636.4111672321256 },
+        "position": {
+          "x": 3397.942946831683,
+          "y": 636.4111672321256
+        },
         "data": {
           "id": "GroupNode-7oRzc",
           "type": "GroupNode",
@@ -50,7 +53,10 @@
                 "info": "",
                 "title_case": false,
                 "type": "str",
-                "proxy": { "id": "OpenAIEmbeddings-FBKdM", "field": "client" }
+                "proxy": {
+                  "id": "OpenAIEmbeddings-FBKdM",
+                  "field": "client"
+                }
               },
               "code_OpenAIEmbeddings-B5dsW": {
                 "type": "code",
@@ -70,7 +76,10 @@
                 "load_from_db": false,
                 "title_case": false,
                 "display_name": "code",
-                "proxy": { "id": "OpenAIEmbeddings-FBKdM", "field": "code" }
+                "proxy": {
+                  "id": "OpenAIEmbeddings-FBKdM",
+                  "field": "code"
+                }
               },
               "default_headers_OpenAIEmbeddings-B5dsW": {
                 "trace_as_input": true,
@@ -188,7 +197,10 @@
                 "info": "",
                 "title_case": false,
                 "type": "str",
-                "proxy": { "id": "OpenAIEmbeddings-FBKdM", "field": "model" }
+                "proxy": {
+                  "id": "OpenAIEmbeddings-FBKdM",
+                  "field": "model"
+                }
               },
               "model_kwargs_OpenAIEmbeddings-B5dsW": {
                 "trace_as_input": true,
@@ -497,7 +509,10 @@
                 "load_from_db": false,
                 "title_case": false,
                 "display_name": "code",
-                "proxy": { "id": "CustomComponent-L1VfC", "field": "code" }
+                "proxy": {
+                  "id": "CustomComponent-L1VfC",
+                  "field": "code"
+                }
               },
               "input_message_CustomComponent-63VyB": {
                 "trace_as_input": true,
@@ -539,7 +554,10 @@
                 "load_from_db": false,
                 "title_case": false,
                 "display_name": "code",
-                "proxy": { "id": "ParseData-Dmlks", "field": "code" }
+                "proxy": {
+                  "id": "ParseData-Dmlks",
+                  "field": "code"
+                }
               },
               "sep_ParseData-M2bQq": {
                 "trace_as_metadata": true,
@@ -556,7 +574,10 @@
                 "info": "",
                 "title_case": false,
                 "type": "str",
-                "proxy": { "id": "ParseData-Dmlks", "field": "sep" }
+                "proxy": {
+                  "id": "ParseData-Dmlks",
+                  "field": "sep"
+                }
               },
               "template_ParseData-M2bQq": {
                 "trace_as_input": true,
@@ -576,7 +597,10 @@
                 "info": "The template to use for formatting the data. It can contain the keys {text}, {data} or any other key in the Data.",
                 "title_case": false,
                 "type": "str",
-                "proxy": { "id": "ParseData-Dmlks", "field": "template" }
+                "proxy": {
+                  "id": "ParseData-Dmlks",
+                  "field": "template"
+                }
               }
             },
             "flow": {
@@ -1530,7 +1554,11 @@
                     "selected": true
                   }
                 ],
-                "viewport": { "zoom": 1, "x": 0, "y": 0 }
+                "viewport": {
+                  "zoom": 1,
+                  "x": 0,
+                  "y": 0
+                }
               },
               "is_component": false,
               "name": "Loving Euler",

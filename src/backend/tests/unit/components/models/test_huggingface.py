@@ -1,13 +1,5 @@
 from langinfra.components.models.huggingface import HuggingFaceEndpointsComponent
-from langinfra.inputs.inputs import (
-    DictInput,
-    DropdownInput,
-    FloatInput,
-    HandleInput,
-    IntInput,
-    SecretStrInput,
-    StrInput,
-)
+from langinfra.inputs.inputs import DictInput, DropdownInput, FloatInput, IntInput, SecretStrInput, StrInput
 
 
 def test_huggingface_inputs():
@@ -28,7 +20,6 @@ def test_huggingface_inputs():
         "huggingfacehub_api_token": SecretStrInput,
         "model_kwargs": DictInput,
         "retry_attempts": IntInput,
-        "output_parser": HandleInput,
     }
 
     # Check if all expected inputs are present

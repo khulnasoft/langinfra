@@ -88,4 +88,4 @@ ENV LANGINFRA_HOST=0.0.0.0
 ENV LANGINFRA_PORT=7860
 
 USER 1000
-ENTRYPOINT ["python", "-m", "langinfra", "run", "--host", "0.0.0.0", "--backend-only"]
+CMD ["python", "-m", "langinfra", "run", "--host", "0.0.0.0", "--backend-only"]

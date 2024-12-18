@@ -8,26 +8,26 @@ You can deploy Langinfra either locally or as a hosted service with [**Datastax 
 
 ## Install Langinfra locally
 
-Install Langinfra locally with [pip](https://pypi.org/project/pip/), [uv](https://docs.astral.sh/uv/getting-started/installation/), or [pipx](https://pipx.pypa.io/stable/installation/).
+Install Langinfra locally with [uv (recommended)](https://docs.astral.sh/uv/getting-started/installation/), [pip](https://pypi.org/project/pip/), or [pipx](https://pipx.pypa.io/stable/installation/).
 
 ### Prerequisites
 
-* [Python 3.10 to 3.12](https://www.python.org/downloads/release/python-3100/) installed
-* [pip](https://pypi.org/project/pip/), [uv](https://docs.astral.sh/uv/getting-started/installation/), or [pipx](https://pipx.pypa.io/stable/installation/) installed
-* Before installing Langinfra, we recommend creating a virtual environment to isolate your Python dependencies with [venv](https://docs.python.org/3/library/venv.html), [uv](https://docs.astral.sh/uv/pip/environments), or [conda](https://anaconda.org/anaconda/conda)
+- [Python 3.10 to 3.12](https://www.python.org/downloads/release/python-3100/) installed
+- [uv](https://docs.astral.sh/uv/getting-started/installation/), [pip](https://pypi.org/project/pip/), or [pipx](https://pipx.pypa.io/stable/installation/) installed
+- Before installing Langinfra, we recommend creating a virtual environment to isolate your Python dependencies with [uv](https://docs.astral.sh/uv/pip/environments), [venv](https://docs.python.org/3/library/venv.html), or [conda](https://anaconda.org/anaconda/conda)
 
 ### Install Langinfra with pip or pipx
-
-Install Langinfra with pip:
-
-```bash
-python -m pip install langinfra
-```
 
 Install Langinfra with uv:
 
 ```bash
 uv pip install langinfra
+```
+
+Install Langinfra with pip:
+
+```bash
+python -m pip install langinfra
 ```
 
 Install Langinfra with pipx using the Python 3.10 executable:
@@ -38,16 +38,16 @@ pipx install langinfra --python python3.10
 
 ## Run Langinfra
 
-1. To run Langinfra, enter the following command.
-
-```bash
-python -m langinfra run
-```
-
-To run Langinfra with uv, enter the following command.
+1. To run Langinfra with uv, enter the following command.
 
 ```bash
 uv run langinfra run
+```
+
+2. To run Langinfra with pip, enter the following command.
+
+```bash
+python -m langinfra run
 ```
 
 2. Confirm that a local Langinfra instance starts by visiting `http://127.0.0.1:7860` in a Chromium-based browser.
@@ -56,16 +56,16 @@ Now that Langinfra is running, follow the [Quickstart](/get-started-quickstart) 
 
 ## Manage Langinfra versions
 
-To upgrade Langinfra to the latest version, use the pip upgrade command.
-
-```bash
-python -m pip install langinfra -U
-```
-
 To upgrade Langinfra to the latest version with uv, use the uv pip upgrade command.
 
 ```bash
 uv pip install langinfra -U
+```
+
+To upgrade Langinfra to the latest version, use the pip upgrade command.
+
+```bash
+python -m pip install langinfra -U
 ```
 
 To install a specific version of the Langinfra package, add the required version to the command.
@@ -91,9 +91,11 @@ This is a list of possible issues that you may encounter when installing and run
 ### No `langinfra.__main__` module
 
 When you try to run Langinfra with the command `langinfra run`, you encounter the following error:
+
 ```bash
 > No module named 'langinfra.__main__'
 ```
+
 1. Run `python -m langinfra run` instead of `langinfra run`.
 2. If that doesn't work, reinstall the latest Langinfra version with `python -m pip install langinfra -U`.
 3. If that doesn't work, reinstall Langinfra and its dependencies with `python -m pip install langinfra --pre -U --force-reinstall`.
@@ -128,6 +130,22 @@ This error can occur during Langinfra upgrades when the new version can't overri
 
 If you wish to retain your files, back them up before clearing the folder.
 
+### Langinfra installation freezes at pip dependency resolution
 
+Installing Langinfra with `pip install langinfra` slowly fails with this error message:
 
+```plain
+pip is looking at multiple versions of <<library>> to determine which version is compatible with other requirements. This could take a while.
+```
 
+To work around this issue, install Langinfra with [`uv`](https://docs.astral.sh/uv/getting-started/installation/) instead of `pip`.
+
+```plain
+uv pip install langinfra
+```
+
+To run Langinfra with uv:
+
+```plain
+uv run langinfra run
+```

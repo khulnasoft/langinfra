@@ -1,10 +1,16 @@
+from typing import Any
+
 import pytest
 from langinfra.components.agents import AgentComponent
 from langinfra.components.crewai import CrewAIAgentComponent, SequentialTaskComponent
+from langinfra.components.custom_component import CustomComponent
 from langinfra.components.inputs import ChatInput
 from langinfra.components.models import OpenAIModelComponent
 from langinfra.components.outputs import ChatOutput
+from langinfra.custom.utils import update_component_build_config
+from langinfra.schema import dotdict
 from langinfra.template import Output
+from typing_extensions import override
 
 
 def test_set_invalid_output():
@@ -58,3 +64,39 @@ def test_set_required_inputs_various_components():
     assert _assert_all_outputs_have_different_required_inputs(chatoutput.outputs)
     assert _assert_all_outputs_have_different_required_inputs(task.outputs)
     assert _assert_all_outputs_have_different_required_inputs(agent.outputs)
+
+
+async def test_update_component_build_config_sync():
+    class TestComponent(CustomComponent):
+        @override
+        def update_build_config(
+            self,
+            build_config: dotdict,
+            field_value: Any,
+            field_name: str | None = None,
+        ):
+            build_config["foo"] = "bar"
+            return build_config
+
+    component = TestComponent()
+    build_config = dotdict()
+    build_config = await update_component_build_config(component, build_config, "", "")
+    assert build_config["foo"] == "bar"
+
+
+async def test_update_component_build_config_async():
+    class TestComponent(CustomComponent):
+        @override
+        async def update_build_config(
+            self,
+            build_config: dotdict,
+            field_value: Any,
+            field_name: str | None = None,
+        ):
+            build_config["foo"] = "bar"
+            return build_config
+
+    component = TestComponent()
+    build_config = dotdict()
+    build_config = await update_component_build_config(component, build_config, "", "")
+    assert build_config["foo"] == "bar"

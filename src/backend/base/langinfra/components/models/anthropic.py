@@ -3,7 +3,6 @@ from pydantic.v1 import SecretStr
 from langinfra.base.models.anthropic_constants import ANTHROPIC_MODELS
 from langinfra.base.models.model import LCModelComponent
 from langinfra.field_typing import LanguageModel
-from langinfra.inputs.inputs import HandleInput
 from langinfra.io import DropdownInput, FloatInput, IntInput, MessageTextInput, SecretStrInput
 
 
@@ -39,13 +38,6 @@ class AnthropicModelComponent(LCModelComponent):
         ),
         MessageTextInput(
             name="prefill", display_name="Prefill", info="Prefill text to guide the model's response.", advanced=True
-        ),
-        HandleInput(
-            name="output_parser",
-            display_name="Output Parser",
-            info="The parser to use to parse the output of the model",
-            advanced=True,
-            input_types=["OutputParser"],
         ),
     ]
 

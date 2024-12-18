@@ -22,7 +22,7 @@ from langinfra.schema.content_types import ErrorContent
 from langinfra.schema.data import Data
 from langinfra.schema.image import Image, get_file_paths, is_image_file
 from langinfra.schema.properties import Properties, Source
-from langinfra.schema.validators import timestamp_to_str_validator
+from langinfra.schema.validators import timestamp_to_str, timestamp_to_str_validator
 from langinfra.utils.constants import (
     MESSAGE_SENDER_AI,
     MESSAGE_SENDER_NAME_AI,
@@ -40,7 +40,7 @@ class Message(Data):
     sender: str | None = None
     sender_name: str | None = None
     files: list[str | Image] | None = Field(default=[])
-    session_id: str | None = Field(default="")
+    session_id: str | UUID | None = Field(default="")
     timestamp: Annotated[str, timestamp_to_str_validator] = Field(
         default_factory=lambda: datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S %Z")
     )
@@ -91,7 +91,7 @@ class Message(Data):
     def serialize_timestamp(self, value):
         try:
             # Try parsing with timezone
-            return datetime.strptime(value.strip(), "%Y-%m-%d %H:%M:%S %Z").astimezone(timezone.utc)
+            return datetime.strptime(value.strip(), "%Y-%m-%d %H:%M:%S %Z").replace(tzinfo=timezone.utc)
         except ValueError:
             # Try parsing without timezone
             return datetime.strptime(value.strip(), "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc)
@@ -311,6 +311,24 @@ class MessageResponse(DefaultModel):
     category: str | None = None
     content_blocks: list[ContentBlock] | None = None
 
+    @field_validator("content_blocks", mode="before")
+    @classmethod
+    def validate_content_blocks(cls, v):
+        if isinstance(v, str):
+            v = json.loads(v)
+        if isinstance(v, list):
+            return [cls.validate_content_blocks(block) for block in v]
+        if isinstance(v, dict):
+            return ContentBlock.model_validate(v)
+        return v
+
+    @field_validator("properties", mode="before")
+    @classmethod
+    def validate_properties(cls, v):
+        if isinstance(v, str):
+            v = json.loads(v)
+        return v
+
     @field_validator("files", mode="before")
     @classmethod
     def validate_files(cls, v):
@@ -321,8 +339,7 @@ class MessageResponse(DefaultModel):
     @field_serializer("timestamp")
     @classmethod
     def serialize_timestamp(cls, v):
-        v = v.replace(microsecond=0)
-        return v.strftime("%Y-%m-%d %H:%M:%S %Z")
+        return timestamp_to_str(v)
 
     @field_serializer("files")
     @classmethod

@@ -941,8 +941,8 @@ export function filterFlow(
 
 export function findLastNode({ nodes, edges }: findLastNodeType) {
   /*
-		this function receives a flow and return the last node
-	*/
+    this function receives a flow and return the last node
+  */
   let lastNode = nodes.find((n) => !edges.some((e) => e.source === n.id));
   return lastNode;
 }
@@ -1036,7 +1036,7 @@ export function validateSelection(
 }
 function updateGroupNodeTemplate(template: APITemplateType) {
   /*this function receives a template, iterates for it's items
-	updating the visibility of all basic types setting it to advanced true*/
+  updating the visibility of all basic types setting it to advanced true*/
   Object.keys(template).forEach((key) => {
     let type = template[key].type;
     let input_types = template[key].input_types;
@@ -1062,10 +1062,10 @@ export function mergeNodeTemplates({
   edges: Edge[];
 }): APITemplateType {
   /* this function receives a flow and iterate throw each node
-		and merge the templates with only the visible fields
-		if there are two keys with the same name in the flow, we will update the display name of each one
-		to show from which node it came from
-	*/
+    and merge the templates with only the visible fields
+    if there are two keys with the same name in the flow, we will update the display name of each one
+    to show from which node it came from
+  */
   let template: APITemplateType = {};
   nodes.forEach((node) => {
     let nodeTemplate = cloneDeep(node.data.node!.template);
@@ -1099,8 +1099,8 @@ export function isTargetHandleConnected(
   nodeId: string,
 ) {
   /*
-		this function receives a flow and a handleId and check if there is a connection with this handle
-	*/
+    this function receives a flow and a handleId and check if there is a connection with this handle
+  */
   if (!field) return true;
   if (field.proxy) {
     if (
@@ -1139,8 +1139,8 @@ export function isTargetHandleConnected(
 
 export function generateNodeTemplate(Flow: FlowType) {
   /*
-		this function receives a flow and generate a template for the group node
-	*/
+    this function receives a flow and generate a template for the group node
+  */
   let template = mergeNodeTemplates({
     nodes: Flow.data!.nodes,
     edges: Flow.data!.edges,
@@ -1625,11 +1625,30 @@ export function isOutputType(type: string): boolean {
   return OUTPUT_TYPES.has(type);
 }
 
-export function updateGroupRecursion(groupNode: NodeType, edges: Edge[]) {
+export function updateGroupRecursion(
+  groupNode: NodeType,
+  edges: Edge[],
+  unavailableFields:
+    | {
+        [name: string]: string;
+      }
+    | undefined,
+  globalVariablesEntries: string[] | undefined,
+) {
+  updateGlobalVariables(
+    groupNode.data.node,
+    unavailableFields,
+    globalVariablesEntries,
+  );
   if (groupNode.data.node?.flow) {
     groupNode.data.node.flow.data!.nodes.forEach((node) => {
       if (node.data.node?.flow) {
-        updateGroupRecursion(node, node.data.node.flow.data!.edges);
+        updateGroupRecursion(
+          node,
+          node.data.node.flow.data!.edges,
+          unavailableFields,
+          globalVariablesEntries,
+        );
       }
     });
     let newFlow = groupNode.data.node!.flow;
@@ -1638,6 +1657,40 @@ export function updateGroupRecursion(groupNode: NodeType, edges: Edge[]) {
     updateProxyIdsOnOutputs(groupNode.data.node.outputs, idsMap);
     let flowEdges = edges;
     updateEdgesIds(flowEdges, idsMap);
+  }
+}
+export function updateGlobalVariables(
+  node: APIClassType | undefined,
+  unavailableFields:
+    | {
+        [name: string]: string;
+      }
+    | undefined,
+  globalVariablesEntries: string[] | undefined,
+) {
+  if (node && node.template) {
+    Object.keys(node.template).forEach((field) => {
+      if (
+        globalVariablesEntries &&
+        node!.template[field].load_from_db &&
+        !globalVariablesEntries.includes(node!.template[field].value)
+      ) {
+        node!.template[field].value = "";
+        node!.template[field].load_from_db = false;
+      }
+      if (
+        !node!.template[field].load_from_db &&
+        node!.template[field].value === "" &&
+        unavailableFields &&
+        Object.keys(unavailableFields).includes(
+          node!.template[field].display_name ?? "",
+        )
+      ) {
+        node!.template[field].value =
+          unavailableFields[node!.template[field].display_name ?? ""];
+        node!.template[field].load_from_db = true;
+      }
+    });
   }
 }
 

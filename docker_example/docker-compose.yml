@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   langinfra:
-    image: khulnasoft/langinfra:latest # or another version tag on https://hub.docker.com/r/khulnasoft/langinfra
+    image: khulnasoft/langinfra:latest # or another version tag on https://hub.docker.com/r/khulnasoft/langinfra 
     pull_policy: always               # set to 'always' when using 'latest' image
     ports:
       - "7860:7860"

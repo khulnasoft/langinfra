@@ -3,7 +3,6 @@ from pydantic.v1 import SecretStr
 
 from langinfra.base.models.model import LCModelComponent
 from langinfra.field_typing import LanguageModel
-from langinfra.inputs.inputs import HandleInput
 from langinfra.io import FloatInput, SecretStrInput
 
 
@@ -24,13 +23,6 @@ class CohereComponent(LCModelComponent):
             value="COHERE_API_KEY",
         ),
         FloatInput(name="temperature", display_name="Temperature", value=0.75),
-        HandleInput(
-            name="output_parser",
-            display_name="Output Parser",
-            info="The parser to use to parse the output of the model",
-            advanced=True,
-            input_types=["OutputParser"],
-        ),
     ]
 
     def build_model(self) -> LanguageModel:  # type: ignore[type-var]
