@@ -19,7 +19,7 @@ Develop Langinfra locally with [uv](https://docs.astral.sh/uv/getting-started/in
 
 ### Clone the Langinfra Repository
 
-1. Navigate to the [Langinfra GitHub repository](https://github.com/khulnasoft/langinfra), and then click **Fork**.
+1. Navigate to the [Langinfra GitHub repository](https://github.com/langinfra/langinfra), and then click **Fork**.
 
 2. Add the new remote to your local repository on your local machine:
 
@@ -81,7 +81,7 @@ The documentation is built using [Docusaurus](https://docusaurus.io/) and writte
 
 ### Clone the Langinfra repository
 
-1. Navigate to the [Langinfra GitHub repository](https://github.com/khulnasoft/langinfra), and then click **Fork**.
+1. Navigate to the [Langinfra GitHub repository](https://github.com/langinfra/langinfra), and then click **Fork**.
 
 2. Add the new remote to your local repository on your local machine:
 

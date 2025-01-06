@@ -28,7 +28,7 @@ export default function CrashErrorComponent({
                 <p>
                   Please report errors with detailed tracebacks on the{" "}
                   <a
-                    href="https://github.com/khulnasoft/langinfra/issues"
+                    href="https://github.com/langinfra/langinfra/issues"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-medium hover:underline"
@@ -47,7 +47,7 @@ export default function CrashErrorComponent({
                 <Button onClick={resetErrorBoundary}>Restart Langinfra</Button>
 
                 <a
-                  href="https://github.com/khulnasoft/langinfra/issues/new"
+                  href="https://github.com/langinfra/langinfra/issues/new"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

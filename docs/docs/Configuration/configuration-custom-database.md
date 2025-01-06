@@ -35,7 +35,7 @@ LANGINFRA_DATABASE_URL="postgresql://user:password@localhost:5432/dbname"
 ```
 
 :::tip
-The Langinfra project includes a [`.env.example`](https://github.com/khulnasoft/langinfra/blob/main/.env.example) file to help you get started.
+The Langinfra project includes a [`.env.example`](https://github.com/langinfra/langinfra/blob/main/.env.example) file to help you get started.
 You can copy the contents of this file into your own `.env` file and replace the example values with your own preferred settings.
 Replace the value for `LANGINFRA_DATABASE_URL` with your PostgreSQL connection string.
 :::
@@ -51,7 +51,7 @@ You will see new tables and traffic created.
 
 ## Example Langinfra and PostgreSQL docker-compose.yml
 
-The Langinfra project includes a [`docker-compose.yml`](https://github.com/khulnasoft/langinfra/blob/main/docker_example/docker-compose.yml) file  for quick deployment with PostgreSQL.
+The Langinfra project includes a [`docker-compose.yml`](https://github.com/langinfra/langinfra/blob/main/docker_example/docker-compose.yml) file  for quick deployment with PostgreSQL.
 
 This configuration launches Langinfra and PostgreSQL containers, with Langinfra pre-configured to use the PostgreSQL database. Customize the database credentials as needed.
 

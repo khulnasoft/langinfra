@@ -960,7 +960,7 @@
                 },
                 "data": {
                     "node": {
-                        "description": "**Google Drive Example Scopes**\n\n**Langinfra - OAuth Integration Documentation**\n\n```\ndocs.langinfra.org/integrations-setup-google-oauth-langinfra\n```\n\n**Drive API Documentation**\n\nhttps://developers.google.com/drive/api/guides/api-specific-auth\n\n**Scope Used in This Example**\n\nPermission to view and download all your Drive files.\n\n```\nhttps://www.googleapis.com/auth/drive.readonly\n```\n\n**Example of How to Enter Scopes**\n\n```\nhttps://www.googleapis.com/auth/drive.apps.readonly, https://www.googleapis.com/auth/drive, https://www.googleapis.com/auth/drive.readonly, https://www.googleapis.com/auth/drive.activity\n```",
+                        "description": "**Google Drive Example Scopes**\n\n**Langinfra - OAuth Integration Documentation**\n\n```\ndocs-langinfra.khulnasoft.com/integrations-setup-google-oauth-langinfra\n```\n\n**Drive API Documentation**\n\nhttps://developers.google.com/drive/api/guides/api-specific-auth\n\n**Scope Used in This Example**\n\nPermission to view and download all your Drive files.\n\n```\nhttps://www.googleapis.com/auth/drive.readonly\n```\n\n**Example of How to Enter Scopes**\n\n```\nhttps://www.googleapis.com/auth/drive.apps.readonly, https://www.googleapis.com/auth/drive, https://www.googleapis.com/auth/drive.readonly, https://www.googleapis.com/auth/drive.activity\n```",
                         "display_name": "",
                         "documentation": "",
                         "template": {

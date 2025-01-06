@@ -59,7 +59,7 @@ class MCPSse(Component):
     tool_names = [str]
     display_name = "MCP Tools (SSE)"
     description = "Connects to an MCP server over SSE and exposes it's tools as langinfra tools to be used by an Agent."
-    documentation: str = "http://docs.langinfra.org/components/custom"
+    documentation: str = "http://docs-langinfra.khulnasoft.com/components/custom"
     icon = "code"
     name = "MCPSse"
 

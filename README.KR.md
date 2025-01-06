@@ -5,7 +5,7 @@
 
 <!-- markdownlint-disable MD030 -->
 
-# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.org)
+# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.khulnasoft.com)
 
 <p align="center"><strong>
     다중 에이전트 및 RAG 애플리케이션 구축을 위한 시각적 프레임워크
@@ -15,14 +15,14 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://docs.langinfra.org" style="text-decoration: underline;">문서</a> -
+    <a href="https://docs-langinfra.khulnasoft.com" style="text-decoration: underline;">문서</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">Discord에 참여하기</a> -
     <a href="https://twitter.com/langinfra_ai" style="text-decoration: underline;">X에서 팔로우하기</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra" style="text-decoration: underline;">실시간 데모</a>
 </p>
 
 <p align="center">
-    <a href="https://github.com/khulnasoft/langinfra">
+    <a href="https://github.com/langinfra/langinfra">
         <img src="https://img.shields.io/github/stars/khulnasoft/langinfra">
     </a>
     <a href="https://discord.com/invite/EqksyE2EX9">
@@ -120,7 +120,7 @@ Google Cloud Shell을 사용하여 Google Cloud Platform(GCP)에 Langinfra를 �
 
 또는 아래의 **"Cloud Shell에서 열기"** 버튼을 클릭하여 Google Cloud Shell을 시작하고 Langinfra 저장소를 복제한 후 필요한 리소스를 설정하고 GCP 프로젝트에 Langinfra를 배포하는 과정을 안내하는 **대화형 튜토리얼**을 시작합니다.
 
-[![Cloud Shell에서 열기](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/khulnasoft/langinfra&working_dir=scripts/gcp&shellonly=true&tutorial=walkthroughtutorial_spot.md)
+[![Cloud Shell에서 열기](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/langinfra/langinfra&working_dir=scripts/gcp&shellonly=true&tutorial=walkthroughtutorial_spot.md)
 
 ## Railway에 배포하기
 
@@ -130,7 +130,7 @@ Google Cloud Shell을 사용하여 Google Cloud Platform(GCP)에 Langinfra를 �
 
 ## Render에 배포하기
 
-<a href="https://render.com/deploy?repo=https://github.com/khulnasoft/langinfra/tree/main">
+<a href="https://render.com/deploy?repo=https://github.com/langinfra/langinfra/tree/main">
 <img src="https://render.com/images/deploy-to-render-button.svg" alt="Render에 배포하기" />
 </a>
 
@@ -189,7 +189,7 @@ These parameters are important for users who need to customize the behavior of L
 
 # 🌟 기여자
 
-[![langinfra contributors](https://contrib.rocks/image?repo=khulnasoft/langinfra)](https://github.com/khulnasoft/langinfra/graphs/contributors)
+[![langinfra contributors](https://contrib.rocks/image?repo=khulnasoft/langinfra)](https://github.com/langinfra/langinfra/graphs/contributors)
 
 # 📄 라이선스
 

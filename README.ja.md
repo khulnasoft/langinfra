@@ -5,7 +5,7 @@
 
 <!-- markdownlint-disable MD030 -->
 
-# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.org)
+# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.khulnasoft.com)
 
 <p align="center"><strong>
     マルチエージェントおよびRAGアプリケーションを構築するためのビジュアルフレームワーク
@@ -15,14 +15,14 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://docs.langinfra.org" style="text-decoration: underline;">ドキュメント</a> -
+    <a href="https://docs-langinfra.khulnasoft.com" style="text-decoration: underline;">ドキュメント</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">Discordに参加</a> -
     <a href="https://twitter.com/langinfra_ai" style="text-decoration: underline;">Xでフォロー</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra-Preview" style="text-decoration: underline;">ライブデモ</a>
 </p>
 
 <p align="center">
-    <a href="https://github.com/khulnasoft/langinfra">
+    <a href="https://github.com/langinfra/langinfra">
         <img src="https://img.shields.io/github/stars/khulnasoft/langinfra">
     </a>
     <a href="https://discord.com/invite/EqksyE2EX9">
@@ -118,7 +118,7 @@ Google Cloud Shell を使用して Google Cloud Platform（GCP）に Langinfra �
 
 または、以下の**「Open in Cloud Shell」**ボタンをクリックして Google Cloud Shell を起動し、Langinfra リポジトリをクローンして、GCP プロジェクトに必要なリソースを設定し、Langinfra をデプロイするプロセスをガイドする**インタラクティブチュートリアル**を開始します。
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/khulnasoft/langinfra&working_dir=scripts/gcp&shellonly=true&tutorial=walkthroughtutorial_spot.md)
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/langinfra/langinfra&working_dir=scripts/gcp&shellonly=true&tutorial=walkthroughtutorial_spot.md)
 
 ## Railway にデプロイ
 
@@ -128,7 +128,7 @@ Google Cloud Shell を使用して Google Cloud Platform（GCP）に Langinfra �
 
 ## Render にデプロイ
 
-<a href="https://render.com/deploy?repo=https://github.com/khulnasoft/langinfra/tree/main">
+<a href="https://render.com/deploy?repo=https://github.com/langinfra/langinfra/tree/main">
 <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" />
 </a>
 
@@ -187,7 +187,7 @@ langinfra run [OPTIONS]
 
 # 🌟 貢献者
 
-[![langinfra contributors](https://contrib.rocks/image?repo=khulnasoft/langinfra)](https://github.com/khulnasoft/langinfra/graphs/contributors)
+[![langinfra contributors](https://contrib.rocks/image?repo=khulnasoft/langinfra)](https://github.com/langinfra/langinfra/graphs/contributors)
 
 # 📄 ライセンス
 

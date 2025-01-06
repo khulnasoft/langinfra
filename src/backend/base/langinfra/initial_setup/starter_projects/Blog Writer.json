@@ -249,8 +249,8 @@
                 "trace_as_metadata": true,
                 "type": "str",
                 "value": [
-                  "https://langinfra.org/",
-                  "https://docs.langinfra.org/"
+                  "https://langinfra.khulnasoft.com/",
+                  "https://docs-langinfra.khulnasoft.com/"
                 ]
               }
             }

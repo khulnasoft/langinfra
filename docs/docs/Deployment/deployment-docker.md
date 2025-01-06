@@ -26,7 +26,7 @@ This guide will help you get LangInfra up and running using Docker and Docker Co
 
 1. Clone the LangInfra repository:
 
-	`git clone https://github.com/khulnasoft/langinfra.git`
+	`git clone https://github.com/langinfra/langinfra.git`
 
 2. Navigate to the `docker_example` directory:
 

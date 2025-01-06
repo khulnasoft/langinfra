@@ -30,7 +30,7 @@ Aurora のシークレットは [AWS Secrets Manager](https://aws.amazon.com/sec
 
 1. 以下のコマンドを実行します。
    ```shell
-   git clone https://github.com/khulnasoft/langinfra.git
+   git clone https://github.com/langinfra/langinfra.git
    cd langinfra/scripts/aws
    cp .env.example .env # 環境設定を変える場合はこのファイル(.env)を編集してください。
    npm ci

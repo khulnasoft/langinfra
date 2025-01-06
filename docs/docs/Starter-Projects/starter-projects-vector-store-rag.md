@@ -22,7 +22,7 @@ We've chosen [Astra DB](https://astra.datastax.com/signup?utm_source=langinfra-
 
 ---
 
-- [Langinfra installed and running](https://docs.langinfra.org/get-started-installation)
+- [Langinfra installed and running](https://docs-langinfra.khulnasoft.com/get-started-installation)
 - [OpenAI API key](https://platform.openai.com/)
 - [An Astra DB vector database created](https://docs.datastax.com/en/astra-db-serverless/get-started/quickstart.html) with:
 	- Application Token
@@ -41,7 +41,7 @@ We've chosen [Astra DB](https://astra.datastax.com/signup?utm_source=langinfra-
 The vector store RAG flow is built of two separate flows for ingestion and query.
 
 
-The **ingestion** part (bottom of the screen) populates the vector store with data from a local file. It ingests data from a file (**File**), splits it into chunks (**Split Text**), indexes it in Astra DB (**Astra DB**), and computes embeddings for the chunks using an embedding model (**OpenAI Embeddings**). 
+The **ingestion** part (bottom of the screen) populates the vector store with data from a local file. It ingests data from a file (**File**), splits it into chunks (**Split Text**), indexes it in Astra DB (**Astra DB**), and computes embeddings for the chunks using an embedding model (**OpenAI Embeddings**).
 
 
 :::tip

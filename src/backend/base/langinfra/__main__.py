@@ -359,7 +359,7 @@ def print_banner(host: str, port: int) -> None:
     title = f"[bold]Welcome to :chains: {styled_package_name}[/bold]\n"
     info_text = (
         "Collaborate, and contribute at our "
-        "[bold][link=https://github.com/khulnasoft/langinfra]GitHub Repo[/link][/bold] :star2:"
+        "[bold][link=https://github.com/langinfra/langinfra]GitHub Repo[/link][/bold] :star2:"
     )
     telemetry_text = (
         "We collect anonymous usage data to improve Langinfra.\n"

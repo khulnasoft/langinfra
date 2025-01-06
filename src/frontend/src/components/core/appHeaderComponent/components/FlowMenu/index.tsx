@@ -32,7 +32,7 @@ import { useShortcutsStore } from "@/stores/shortcuts";
 import { cn } from "@/utils/utils";
 import { useQueryClient } from "@tanstack/react-query";
 
-export const MenuBar = ({}: {}): JSX.Element => {
+export const MenuBar = ({ }: {}): JSX.Element => {
   const shortcuts = useShortcutsStore((state) => state.shortcuts);
   const addFlow = useAddFlow();
   const setErrorData = useAlertStore((state) => state.setErrorData);
@@ -305,9 +305,9 @@ export const MenuBar = ({}: {}): JSX.Element => {
               SAVED_HOVER +
               (updatedAt
                 ? new Date(updatedAt).toLocaleString("en-US", {
-                    hour: "numeric",
-                    minute: "numeric",
-                  })
+                  hour: "numeric",
+                  minute: "numeric",
+                })
                 : "Never")
             ) : (
               <div className="flex w-48 flex-col gap-1 py-1">
@@ -316,7 +316,7 @@ export const MenuBar = ({}: {}): JSX.Element => {
                 </h2>
                 <p className="text-muted-foreground">
                   <a
-                    href="https://docs.langinfra.org/configuration-auto-saving"
+                    href="https://docs-langinfra.khulnasoft.com/configuration-auto-saving"
                     className="text-primary underline"
                   >
                     Enable auto-saving
