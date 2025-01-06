@@ -1,13 +1,6 @@
 import pytest
 from langinfra.schema.content_block import ContentBlock
-from langinfra.schema.content_types import (
-    CodeContent,
-    ErrorContent,
-    JSONContent,
-    MediaContent,
-    TextContent,
-    ToolContent,
-)
+from langinfra.schema.content_types import CodeContent, ErrorContent, JSONContent, MediaContent, TextContent, ToolContent
 
 
 class TestContentBlock:

@@ -1,3 +1,5 @@
+from typing_extensions import override
+
 from langinfra.services.deps import get_settings_service
 from langinfra.utils.lazy_load import LazyLoadDictBase
 
@@ -13,6 +15,7 @@ class AllTypesDict(LazyLoadDictBase):
             "Custom": ["Custom Tool", "Python Function"],
         }
 
+    @override
     def get_type_dict(self):
         from langinfra.interface.types import get_all_types_dict
 

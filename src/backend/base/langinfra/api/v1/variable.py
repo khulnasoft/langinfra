@@ -6,7 +6,7 @@ from sqlalchemy.exc import NoResultFound
 from langinfra.api.utils import CurrentActiveUser, DbSession
 from langinfra.services.database.models.variable import VariableCreate, VariableRead, VariableUpdate
 from langinfra.services.deps import get_variable_service
-from langinfra.services.variable.constants import GENERIC_TYPE
+from langinfra.services.variable.constants import CREDENTIAL_TYPE
 from langinfra.services.variable.service import DatabaseVariableService
 
 router = APIRouter(prefix="/variables", tags=["Variables"])
@@ -38,7 +38,7 @@ async def create_variable(
             name=variable.name,
             value=variable.value,
             default_fields=variable.default_fields or [],
-            type_=variable.type or GENERIC_TYPE,
+            type_=variable.type or CREDENTIAL_TYPE,
             session=session,
         )
     except Exception as e:

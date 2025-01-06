@@ -1,8 +1,8 @@
 ---
 title: Logic
-sidebar_position: 13
 slug: /components-logic
 ---
+
 # Logic components in Langinfra
 
 Logic components provide functionalities for routing, conditional processing, and flow management.

@@ -10,9 +10,9 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://docs-langinfra.khulnasoft.com" style="text-decoration: underline;">文档</a> -
+    <a href="https://docs.langinfra.org" style="text-decoration: underline;">文档</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">加入我们的Discord社区</a> -
-    <a href="https://twitter.com/khulnasoft" style="text-decoration: underline;">在X上关注我们</a> -
+    <a href="https://twitter.com/langinfra_ai" style="text-decoration: underline;">在X上关注我们</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra-Preview" style="text-decoration: underline;">在线体验</a>
 </p>
 
@@ -32,6 +32,7 @@
   <a href="./README.zh_CN.md"><img alt="README in Simplified Chinese" src="https://img.shields.io/badge/简体中文-d9d9d9"></a>
   <a href="./README.ja.md"><img alt="README in Japanese" src="https://img.shields.io/badge/日本語-d9d9d9"></a>
   <a href="./README.KR.md"><img alt="README in KOREAN" src="https://img.shields.io/badge/한국어-d9d9d9"></a>
+  <a href="./README.FR.md"><img alt="README in French" src="https://img.shields.io/badge/Français-d9d9d9"></a>
 </div>
 
 <p align="center">

@@ -13,7 +13,7 @@ from langinfra.schema import Data
 class AstraDBToolComponent(LCToolComponent):
     display_name: str = "Astra DB Tool"
     description: str = "Create a tool to get transactional data from DataStax Astra DB Collection"
-    documentation: str = "https://docs-langinfra.khulnasoft.com/Components/components-tools#astra-db-tool"
+    documentation: str = "https://docs.langinfra.org/Components/components-tools#astra-db-tool"
     icon: str = "AstraDB"
 
     inputs = [

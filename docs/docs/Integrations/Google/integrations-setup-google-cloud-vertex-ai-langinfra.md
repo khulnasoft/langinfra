@@ -1,7 +1,6 @@
 ---
-title: 'Integrate Google Cloud Vertex AI with Langinfra'
+title: Integrate Google Cloud Vertex AI with Langinfra
 slug: /integrations-setup-google-cloud-vertex-ai-langinfra
-sidebar_position: 2
 description: "A comprehensive guide on creating a Google OAuth app, obtaining tokens, and integrating them with Langinfra's Google components."
 ---
 

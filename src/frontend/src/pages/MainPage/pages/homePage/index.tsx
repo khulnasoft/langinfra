@@ -147,7 +147,7 @@ const HomePage = ({ type }) => {
                     <div className="pt-2 text-center text-sm text-secondary-foreground">
                       No saved or custom components. Learn more about{" "}
                       <a
-                        href="https://docs-langinfra.khulnasoft.com/components-custom-components"
+                        href="https://docs.langinfra.org/components-custom-components"
                         target="_blank"
                         rel="noreferrer"
                         className="underline"
@@ -182,8 +182,8 @@ const HomePage = ({ type }) => {
         openModal={newProjectModal}
         setOpenModal={setNewProjectModal}
         openDeleteFolderModal={false}
-        setOpenDeleteFolderModal={() => {}}
-        handleDeleteFolder={() => {}}
+        setOpenDeleteFolderModal={() => { }}
+        handleDeleteFolder={() => { }}
       />
     </CardsWrapComponent>
   );

@@ -6,7 +6,7 @@ from typing_extensions import Protocol
 from langinfra.schema.message import ContentBlock, Message
 from langinfra.schema.playground_events import PlaygroundEvent
 
-LoggableType: TypeAlias = str | dict | list | int | float | bool | None | BaseModel | PlaygroundEvent
+LoggableType: TypeAlias = str | dict | list | int | float | bool | BaseModel | PlaygroundEvent | None
 
 
 class LogFunctionType(Protocol):

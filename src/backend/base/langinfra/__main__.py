@@ -26,8 +26,8 @@ from sqlmodel import select
 from langinfra.logging.logger import configure, logger
 from langinfra.main import setup_app
 from langinfra.services.database.models.folder.utils import create_default_folder_if_it_doesnt_exist
-from langinfra.services.database.utils import async_session_getter
-from langinfra.services.deps import async_session_scope, get_db_service, get_settings_service
+from langinfra.services.database.utils import session_getter
+from langinfra.services.deps import get_db_service, get_settings_service, session_scope
 from langinfra.services.settings.constants import DEFAULT_SUPERUSER
 from langinfra.services.utils import initialize_services
 from langinfra.utils.version import fetch_latest_version, get_version_info
@@ -423,7 +423,7 @@ def superuser(
 
     async def _create_superuser():
         await initialize_services()
-        async with async_session_getter(db_service) as session:
+        async with session_getter(db_service) as session:
             from langinfra.services.auth.utils import create_super_user
 
             if await create_super_user(db=session, username=username, password=password):
@@ -485,6 +485,15 @@ def copy_db() -> None:
         typer.echo("Pre-release database not found in the cache directory.")
 
 
+async def _migration(*, test: bool, fix: bool) -> None:
+    await initialize_services(fix_migration=fix)
+    db_service = get_db_service()
+    if not test:
+        await db_service.run_migrations()
+    results = await db_service.run_migrations_test()
+    display_results(results)
+
+
 @app.command()
 def migration(
     test: bool = typer.Option(default=True, help="Run migrations in test mode."),  # noqa: FBT001
@@ -499,12 +508,7 @@ def migration(
     ):
         raise typer.Abort
 
-    asyncio.run(initialize_services(fix_migration=fix))
-    db_service = get_db_service()
-    if not test:
-        db_service.run_migrations()
-    results = db_service.run_migrations_test()
-    display_results(results)
+    asyncio.run(_migration(test=test, fix=fix))
 
 
 @app.command()
@@ -529,7 +533,7 @@ def api_key(
             typer.echo("Auto login is disabled. API keys cannot be created through the CLI.")
             return None
 
-        async with async_session_scope() as session:
+        async with session_scope() as session:
             from langinfra.services.database.models.user.model import User
 
             stmt = select(User).where(User.username == DEFAULT_SUPERUSER)

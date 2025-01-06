@@ -1,6 +1,5 @@
 ---
 title: Contribute to Langinfra
-sidebar_position: 1
 slug: /contributing-how-to-contribute
 ---
 

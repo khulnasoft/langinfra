@@ -3,7 +3,11 @@ from langinfra.inputs import BoolInput
 from langinfra.io import DropdownInput, MessageInput, MessageTextInput, Output
 from langinfra.schema.message import Message
 from langinfra.schema.properties import Source
-from langinfra.utils.constants import MESSAGE_SENDER_AI, MESSAGE_SENDER_NAME_AI, MESSAGE_SENDER_USER
+from langinfra.utils.constants import (
+    MESSAGE_SENDER_AI,
+    MESSAGE_SENDER_NAME_AI,
+    MESSAGE_SENDER_USER,
+)
 
 
 class ChatOutput(ChatComponent):
@@ -11,6 +15,7 @@ class ChatOutput(ChatComponent):
     description = "Display a chat message in the Playground."
     icon = "MessagesSquare"
     name = "ChatOutput"
+    minimized = True
 
     inputs = [
         MessageInput(

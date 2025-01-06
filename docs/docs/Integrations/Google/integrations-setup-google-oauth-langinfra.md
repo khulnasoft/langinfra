@@ -1,7 +1,7 @@
 ---
 title: Integrate Google OAuth with Langinfra
 slug: /integrations-setup-google-oauth-langinfra
-sidebar_position: 3
+
 description: "A comprehensive guide on creating a Google OAuth app, obtaining tokens, and integrating them with Langinfra's Google components."
 ---
 

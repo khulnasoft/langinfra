@@ -3,7 +3,7 @@ from langchain_experimental.agents.agent_toolkits.csv.base import create_csv_age
 from langinfra.base.agents.agent import LCAgentComponent
 from langinfra.field_typing import AgentExecutor
 from langinfra.inputs import DropdownInput, FileInput, HandleInput
-from langinfra.inputs.inputs import MessageTextInput
+from langinfra.inputs.inputs import DictInput, MessageTextInput
 from langinfra.schema.message import Message
 from langinfra.template.field.base import Output
 
@@ -44,6 +44,13 @@ class CSVAgentComponent(LCAgentComponent):
             display_name="Text",
             info="Text to be passed as input and extract info from the CSV File.",
         ),
+        DictInput(
+            name="pandas_kwargs",
+            display_name="Pandas Kwargs",
+            info="Pandas Kwargs to be passed to the agent.",
+            advanced=True,
+            is_list=True,
+        ),
     ]
 
     outputs = [
@@ -67,6 +74,7 @@ class CSVAgentComponent(LCAgentComponent):
             path=self._path(),
             agent_type=self.agent_type,
             handle_parsing_errors=self.handle_parsing_errors,
+            pandas_kwargs=self.pandas_kwargs,
             **agent_kwargs,
         )
 
@@ -84,6 +92,7 @@ class CSVAgentComponent(LCAgentComponent):
             path=self._path(),
             agent_type=self.agent_type,
             handle_parsing_errors=self.handle_parsing_errors,
+            pandas_kwargs=self.pandas_kwargs,
             **agent_kwargs,
         )
 

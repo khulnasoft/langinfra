@@ -1,34 +1,34 @@
 import { Duration } from 'aws-cdk-lib'
 import { Construct } from 'constructs';
 import {
-    aws_ec2 as ec2,
-    aws_ecs as ecs,
-    aws_ecr as ecr,
-    aws_rds as rds,
-    aws_servicediscovery as servicediscovery,
-    aws_iam as iam,
-    aws_logs as logs,
-    aws_elasticloadbalancingv2 as elb,
+  aws_ec2 as ec2,
+  aws_ecs as ecs,
+  aws_ecr as ecr,
+  aws_rds as rds,
+  aws_servicediscovery as servicediscovery,
+  aws_iam as iam,
+  aws_logs as logs,
+  aws_elasticloadbalancingv2 as elb,
 } from 'aws-cdk-lib';
 import * as dotenv from 'dotenv';
 const path = require('path');
-dotenv.config({path: path.join(__dirname, "../../.env")});
+dotenv.config({ path: path.join(__dirname, "../../.env") });
 
 interface BackEndProps {
   cluster: ecs.Cluster
-  ecsBackSG:ec2.SecurityGroup
-  ecrBackEndRepository:ecr.Repository
+  ecsBackSG: ec2.SecurityGroup
+  ecrBackEndRepository: ecr.Repository
   backendTaskRole: iam.Role;
   backendTaskExecutionRole: iam.Role;
   backendLogGroup: logs.LogGroup;
-  rdsCluster:rds.DatabaseCluster
-  arch:ecs.CpuArchitecture
+  rdsCluster: rds.DatabaseCluster
+  arch: ecs.CpuArchitecture
   albTG: elb.ApplicationTargetGroup;
 }
 
 export class BackEndCluster extends Construct {
 
-  constructor(scope: Construct, id: string, props:BackEndProps) {
+  constructor(scope: Construct, id: string, props: BackEndProps) {
     super(scope, id)
     const backendServiceName = 'backend'
     const backendServicePort = 7860
@@ -40,33 +40,33 @@ export class BackEndCluster extends Construct {
       this,
       'BackEndTaskDef',
       {
-          memoryLimitMiB: 3072,
-          cpu: 1024,
-          executionRole: props.backendTaskExecutionRole,
-          runtimePlatform:{
-            operatingSystemFamily: ecs.OperatingSystemFamily.LINUX,
-            cpuArchitecture: props.arch,
-          },
-          taskRole: props.backendTaskRole,
+        memoryLimitMiB: 3072,
+        cpu: 1024,
+        executionRole: props.backendTaskExecutionRole,
+        runtimePlatform: {
+          operatingSystemFamily: ecs.OperatingSystemFamily.LINUX,
+          cpuArchitecture: props.arch,
+        },
+        taskRole: props.backendTaskRole,
       }
     );
     backendTaskDefinition.addContainer('backendContainer', {
       image: ecs.ContainerImage.fromEcrRepository(props.ecrBackEndRepository, "latest"),
-      containerName:'langinfra-back-container',
+      containerName: 'langinfra-back-container',
       logging: ecs.LogDriver.awsLogs({
         streamPrefix: 'my-stream',
         logGroup: props.backendLogGroup,
       }),
-      environment:{
-        "LANGINFRA_AUTO_LOGIN" : process.env.LANGINFRA_AUTO_LOGIN ?? 'false',
-        "LANGINFRA_SUPERUSER" : process.env.LANGINFRA_SUPERUSER ?? "admin",
-        "LANGINFRA_SUPERUSER_PASSWORD" : process.env.LANGINFRA_SUPERUSER_PASSWORD ?? "123456"
+      environment: {
+        "LANGINFRA_AUTO_LOGIN": process.env.LANGINFRA_AUTO_LOGIN ?? 'false',
+        "LANGINFRA_SUPERUSER": process.env.LANGINFRA_SUPERUSER ?? "admin",
+        "LANGINFRA_SUPERUSER_PASSWORD": process.env.LANGINFRA_SUPERUSER_PASSWORD ?? "123456"
       },
       portMappings: [
-          {
-              containerPort: backendServicePort,
-              protocol: ecs.Protocol.TCP,
-          },
+        {
+          containerPort: backendServicePort,
+          protocol: ecs.Protocol.TCP,
+        },
       ],
       // Secretの設定
       secrets: {

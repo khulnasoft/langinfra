@@ -1,5 +1,7 @@
 from typing import TYPE_CHECKING
 
+from typing_extensions import override
+
 from langinfra.services.factory import ServiceFactory
 from langinfra.services.socket.service import SocketIOService
 
@@ -13,5 +15,6 @@ class SocketIOFactory(ServiceFactory):
             service_class=SocketIOService,
         )
 
+    @override
     def create(self, cache_service: "CacheService"):
         return SocketIOService(cache_service)

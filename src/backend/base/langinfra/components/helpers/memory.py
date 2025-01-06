@@ -1,11 +1,8 @@
-from langchain.memory import ConversationBufferMemory
-
 from langinfra.custom import Component
-from langinfra.field_typing import BaseChatMemory
 from langinfra.helpers.data import data_to_text
 from langinfra.inputs import HandleInput
 from langinfra.io import DropdownInput, IntInput, MessageTextInput, MultilineInput, Output
-from langinfra.memory import LCBuiltinChatMemory, aget_messages
+from langinfra.memory import aget_messages
 from langinfra.schema import Data
 from langinfra.schema.message import Message
 from langinfra.utils.constants import MESSAGE_SENDER_AI, MESSAGE_SENDER_USER
@@ -21,7 +18,7 @@ class MemoryComponent(Component):
         HandleInput(
             name="memory",
             display_name="External Memory",
-            input_types=["BaseChatMessageHistory"],
+            input_types=["Memory"],
             info="Retrieve messages from an external memory. If empty, it will use the Langinfra tables.",
         ),
         DropdownInput(
@@ -114,7 +111,3 @@ class MemoryComponent(Component):
         stored_text = data_to_text(self.template, await self.retrieve_messages())
         self.status = stored_text
         return Message(text=stored_text)
-
-    def build_lc_memory(self) -> BaseChatMemory:
-        chat_memory = self.memory or LCBuiltinChatMemory(flow_id=self.flow_id, session_id=self.session_id)
-        return ConversationBufferMemory(chat_memory=chat_memory)

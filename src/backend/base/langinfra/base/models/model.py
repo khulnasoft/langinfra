@@ -10,8 +10,8 @@ from langchain_core.output_parsers import BaseOutputParser
 from langinfra.base.constants import STREAM_INFO_TEXT
 from langinfra.custom import Component
 from langinfra.field_typing import LanguageModel
-from langinfra.inputs import MessageInput, MessageTextInput
-from langinfra.inputs.inputs import BoolInput, InputTypes
+from langinfra.inputs import MessageInput
+from langinfra.inputs.inputs import BoolInput, InputTypes, MultilineInput
 from langinfra.schema.message import Message
 from langinfra.template.field.base import Output
 
@@ -26,7 +26,7 @@ class LCModelComponent(Component):
 
     _base_inputs: list[InputTypes] = [
         MessageInput(name="input_value", display_name="Input"),
-        MessageTextInput(
+        MultilineInput(
             name="system_message",
             display_name="System Message",
             info="System message to pass to the model.",
@@ -175,7 +175,8 @@ class LCModelComponent(Component):
             messages.insert(0, SystemMessage(content=system_message))
         inputs: list | dict = messages or {}
         try:
-            if self.output_parser is not None:
+            # TODO: Depreciated Feature to be removed in upcoming release
+            if hasattr(self, "output_parser") and self.output_parser is not None:
                 runnable |= self.output_parser
 
             runnable = runnable.with_config(

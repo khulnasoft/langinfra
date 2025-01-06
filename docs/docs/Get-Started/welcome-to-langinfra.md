@@ -1,6 +1,5 @@
 ---
 title: Welcome to Langinfra
-sidebar_position: 0
 slug: /
 ---
 
@@ -20,9 +19,9 @@ Langinfra is an intuitive visual flow builder. This drag-and-drop interface allo
 
 Langinfra can be used for a wide range of AI applications, including:
 
-* [Craft intelligent chatbots](/starter-projects-memory-chatbot)
-* [Build document analysis systems](/starter-projects-document-qa)
-* [Generate compelling content](/starter-projects-blog-writer)
+* [Craft intelligent chatbots](/tutorials-memory-chatbot)
+* [Build document analysis systems](/tutorials-document-qa)
+* [Generate compelling content](/tutorials-blog-writer)
 * [Orchestrate multi-agent applications](/starter-projects-simple-agent)
 
 ## Community and support
@@ -31,7 +30,7 @@ Join Langinfra's vibrant community of developers and AI enthusiasts. See the fol
 
 * [Contribute to Langinfra](contributing-how-to-contribute)
 * [Langinfra Discord Server](https://discord.gg/EqksyE2EX9)
-* [@langinfra_ai](https://twitter.com/khulnasoft) 
+* [@langinfra_ai](https://twitter.com/langinfra_ai) 
 
 ## Get started with Langinfra
 

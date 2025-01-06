@@ -1,7 +1,6 @@
 ---
-title: Docker
-sidebar_position: 2
-slug: /deployment-docker
+title: Dockers
+lug: /deployment-docker
 ---
 
 
@@ -38,7 +37,7 @@ This guide will help you get LangInfra up and running using Docker and Docker Co
 	`docker compose up`
 
 
-LangInfra will now be accessible at [http://localhost:7860/](http://localhost:7860/).
+LangInfra will now be accessible at `http://localhost:7860/`.
 
 
 ### Docker Compose configuration {#02226209cad24185a6ec5b69bd820d0f}

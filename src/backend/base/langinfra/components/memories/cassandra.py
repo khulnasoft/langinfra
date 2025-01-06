@@ -1,5 +1,5 @@
 from langinfra.base.memory.model import LCChatMemoryComponent
-from langinfra.field_typing import BaseChatMessageHistory
+from langinfra.field_typing.constants import Memory
 from langinfra.inputs import DictInput, MessageTextInput, SecretStrInput
 
 
@@ -49,7 +49,7 @@ class CassandraChatMemory(LCChatMemoryComponent):
         ),
     ]
 
-    def build_message_history(self) -> BaseChatMessageHistory:
+    def build_message_history(self) -> Memory:
         from langchain_community.chat_message_histories import CassandraChatMessageHistory
 
         try:

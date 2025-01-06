@@ -1,6 +1,5 @@
 ---
 title: Basic Prompting
-sidebar_position: 0
 slug: /starter-projects-basic-prompting
 ---
 
@@ -38,7 +37,7 @@ This article demonstrates how to use Langinfra's prompt tools to issue basic pro
 ![](/img/starter-flow-basic-prompting.png)
 
 
-This flow allows you to chat with the **OpenAI** component through the **Prompt** component.
+This flow allows you to chat with the **OpenAI** component through the **Prompt** component. 
 
 
 Examine the **Prompt** component. The **Template** field instructs the LLM to `Answer the user as if you were a pirate.` This should be interesting...

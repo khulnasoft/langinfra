@@ -1,18 +1,15 @@
 ---
-title: Custom Components
-sidebar_position: 8
+title: Create custom components
 slug: /components-custom-components
 ---
 
-# Custom Components
-
-Custom components are created within Langinfra and extend the platform's functionality with custom, resusable Python code.
+Custom components are created within Langinfra and extend the platform's functionality with custom, reusable Python code.
 
 Since Langinfra operates with Python behind the scenes, you can implement any Python function within a Custom Component. This means you can leverage the power of libraries such as Pandas, Scikit-learn, Numpy, and thousands of other packages to create components that handle data processing in unlimited ways. You can use any type as long as the type is properly annotated in the output methods (e.g., `> list[int]`).
 
 Custom Components create reusable and configurable components to enhance the capabilities of Langinfra, making it a powerful tool for developing complex processing between user and AI messages.
 
-## How to Create Custom Components
+## Create a custom component in Langinfra
 
 Creating custom components in Langinfra involves creating a Python class that defines the component's functionality, inputs, and outputs.
 The default code provides a working structure for your custom component.
@@ -26,7 +23,7 @@ from langinfra.schema import Data
 class CustomComponent(Component):
     display_name = "Custom Component"
     description = "Use as a template to create your own component."
-    documentation: str = "http://docs-langinfra.khulnasoft.com/components/custom"
+    documentation: str = "http://docs.langinfra.org/components/custom"
     icon = "custom_components"
     name = "CustomComponent"
 
@@ -62,7 +59,7 @@ from langinfra.schema import Data
 class CustomComponent(Component):
     display_name = "Custom Component"
     description = "Use as a template to create your own component."
-    documentation: str = "http://docs-langinfra.khulnasoft.com/components/custom"
+    documentation: str = "http://docs.langinfra.org/components/custom"
     icon = "custom_components"
     name = "CustomComponent"
 ```
@@ -491,4 +488,4 @@ Advanced methods and attributes offer additional control and functionality. Unde
 
 ## Contribute Custom Components to Langinfra
 
-See [How to Contribute](/contributing-how-to-contribute#submitting-components) to contribute your custom component to Langinfra.
+See [How to Contribute](/contributing-components) to contribute your custom component to Langinfra.

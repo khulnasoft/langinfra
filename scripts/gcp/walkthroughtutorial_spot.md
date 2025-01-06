@@ -1,6 +1,6 @@
 # Deploy Langinfra on Google Cloud Platform
 
-**Duration**: 45 minutes
+**Duration**: 45 minutes  
 **Author**: [Robert Wilkins III](https://www.linkedin.com/in/robertwilkinsiii)
 
 ## Introduction
@@ -27,8 +27,8 @@ In the next step, you'll configure the GCP environment and deploy Langinfra.
 ## Configure the GCP environment and deploy Langinfra
 Run the deploy_langinfra_gcp_spot.sh script to configure the GCP environment and deploy Langinfra:
 
-```sh
-gcloud config set project <walkthrough-project-id/>
+```sh  
+gcloud config set project <walkthrough-project-id/>  
 bash ./deploy_langinfra_gcp_spot.sh
 ```
 

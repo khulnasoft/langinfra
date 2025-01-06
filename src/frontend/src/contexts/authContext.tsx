@@ -15,14 +15,14 @@ import { AuthContextType } from "../types/contexts/auth";
 
 const initialValue: AuthContextType = {
   accessToken: null,
-  login: () => {},
+  login: () => { },
   userData: null,
-  setUserData: () => {},
+  setUserData: () => { },
   authenticationErrorCount: 0,
-  setApiKey: () => {},
+  setApiKey: () => { },
   apiKey: null,
-  storeApiKey: () => {},
-  getUser: () => {},
+  storeApiKey: () => { },
+  getUser: () => { },
 };
 
 export const AuthContext = createContext<AuthContextType>(initialValue);

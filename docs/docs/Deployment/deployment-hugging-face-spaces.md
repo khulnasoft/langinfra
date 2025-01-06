@@ -1,6 +1,5 @@
 ---
 title: HuggingFace Spaces
-sidebar_position: 0
 slug: /deployment-hugging-face-spaces
 ---
 
@@ -29,5 +28,5 @@ HuggingFace provides a great alternative for running Langinfra in their Spaces e
 3. **Complete Installation**: The duplication and setup process begins immediately after you click **Duplicate Space**. Once completed, you will be automatically redirected to the main page of your new Space.
 
 
-4. **Start Exploring Langinfra**: With the setup complete, Langinfra is now ready for use in your Space and you can start exploring its features and capabilities right away!
+4. **Start Exploring Langinfra**: With the setup complete, Langinfra is now ready for use in your Space and you can start exploring its features and capabilities right away! 
 

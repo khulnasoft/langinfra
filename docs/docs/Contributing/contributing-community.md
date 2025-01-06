@@ -1,6 +1,5 @@
 ---
 title: Join the Langinfra community
-sidebar_position: 5
 slug: /contributing-community
 ---
 

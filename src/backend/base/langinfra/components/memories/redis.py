@@ -3,7 +3,7 @@ from urllib import parse
 from langchain_community.chat_message_histories.redis import RedisChatMessageHistory
 
 from langinfra.base.memory.model import LCChatMemoryComponent
-from langinfra.field_typing import BaseChatMessageHistory
+from langinfra.field_typing.constants import Memory
 from langinfra.inputs import IntInput, MessageTextInput, SecretStrInput, StrInput
 
 
@@ -31,7 +31,7 @@ class RedisIndexChatMemory(LCChatMemoryComponent):
         ),
     ]
 
-    def build_message_history(self) -> BaseChatMessageHistory:
+    def build_message_history(self) -> Memory:
         kwargs = {}
         password: str | None = self.password
         if self.key_prefix:

@@ -1,6 +1,5 @@
 ---
 title: Create a problem-solving agent
-sidebar_position: 2
 slug: /agents-tool-calling-agent-component
 ---
 
@@ -111,16 +110,16 @@ class TextAnalyzerComponent(Component):
 
     def analyze_text(self) -> Data:
         text = self.input_text
-
+        
         # Perform text analysis
         word_count = len(text.split())
         char_count = len(text)
         sentence_count = len(re.findall(r'\w+[.!?]', text))
-
+        
         # Transform text
         reversed_text = text[::-1]
         uppercase_text = text.upper()
-
+        
         analysis_result = {
             "original_text": text,
             "word_count": word_count,
@@ -129,7 +128,7 @@ class TextAnalyzerComponent(Component):
             "reversed_text": reversed_text,
             "uppercase_text": uppercase_text
         }
-
+        
         data = Data(value=analysis_result)
         self.status = data
         return data
@@ -157,11 +156,18 @@ These components support **Tool Mode**:
 * **Calculator**
 * **Current date**
 
-If the component you want to use as a tool doesn't have a **Tool Mode** button, add `tool_mode=True` to the component's code under `MessageTextInput`.
+If the component you want to use as a tool doesn't have a **Tool Mode** button, add `tool_mode=True` to one of the component's inputs.
 
-For example, in the [components as tools](#components-as-tools) example above, `tool_mode=True,` is added so the custom component can be used as a tool.
+Langinfra supports **Tool Mode** for the following data types:
 
-**Tool Mode** supports the `MessageTextInput` type.
+* `DataInput`
+* `DataFrameInput`
+* `PromptInput`
+* `MessageTextInput`
+* `MultilineInput`
+* `DropdownInput`
+
+For example, in the [components as tools](#components-as-tools) example above, `tool_mode=True,` is added to the `MultilineInput` input so the custom component can be used as a tool.
 
 ```python
 inputs = [

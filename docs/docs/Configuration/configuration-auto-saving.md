@@ -1,6 +1,5 @@
 ---
 title: Auto-saving
-sidebar_position: 6
 slug: /configuration-auto-save
 ---
 
@@ -18,7 +17,7 @@ When Langinfra is in auto-saving mode, all changes are saved automatically. Auto
 
 ## Disable auto-saving {#environment}
 
-To disable auto-saving,
+To disable auto-saving, 
 
 1. Set an environment variable in your `.env` file.
 

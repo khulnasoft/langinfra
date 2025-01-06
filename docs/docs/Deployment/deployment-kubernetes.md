@@ -1,6 +1,5 @@
 ---
 title: Kubernetes
-sidebar_position: 1
 slug: /deployment-kubernetes
 ---
 
@@ -84,7 +83,7 @@ kubectl port-forward -n langinfra svc/langinfra-langinfra-runtime 7860:7860
 ```
 
 
-Now you can access LangInfra at [http://localhost:7860/](http://localhost:7860/).
+Now you can access LangInfra at `http://localhost:7860/`.
 
 
 ### LangInfra version {#645c6ef7984d4da0bcc4170bab0ff415}
@@ -230,20 +229,20 @@ If you want to download the flow from a remote location, you can specify the URL
 
 	```shell
 	helm install my-langinfra-app langinfra/langinfra-runtime -n langinfra --create-namespace --set image.repository=myuser/langinfra-just-chat --set image.tag=1.0.0
-
+	
 	```
 
 
 	```shell
 	helm install my-langinfra-app langinfra/langinfra-runtime -n langinfra --create-namespace --set downloadFlows.flows[0].url=https://raw.githubusercontent.com/khulnasoft/langinfra/dev/src/backend/base/langinfra/initial_setup/starter_projects/Basic%20Prompting%20(Hello%2C%20world!).json
-
+	
 	```
 
 3. Check the status of the pods.
 
 	```text
 	kubectl get pods -n langinfra
-
+	
 	```
 
 
@@ -258,7 +257,7 @@ kubectl port-forward -n langinfra svc/langinfra-my-langinfra-app 7860:7860
 ```
 
 
-Now you can access the API at [http://localhost:7860/api/v1/flows](http://localhost:7860/api/v1/flows) and execute the flow:
+Now you can access the API at `http://localhost:7860/api/v1/flows` and execute the flow:
 
 
 ```shell
