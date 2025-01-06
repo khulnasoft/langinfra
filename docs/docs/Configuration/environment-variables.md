@@ -64,7 +64,7 @@ If it detects a supported environment variable, then it automatically adopts the
     ```
 
     :::tip
-    The Langinfra project includes a [`.env.example`](https://github.com/khulnasoft/langinfra/blob/main/.env.example) file to help you get started.
+    The Langinfra project includes a [`.env.example`](https://github.com/langinfra/langinfra/blob/main/.env.example) file to help you get started.
     You can copy the contents of this file into your own `.env` file and replace the example values with your own preferred settings.
     :::
 

@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD030 -->
 
-# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.org)
+# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.khulnasoft.com)
 
 <p align="center"><strong>
     一种用于构建多智能体和RAG应用的可视化框架
@@ -10,14 +10,14 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://docs.langinfra.org" style="text-decoration: underline;">文档</a> -
+    <a href="https://docs-langinfra.khulnasoft.com" style="text-decoration: underline;">文档</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">加入我们的Discord社区</a> -
     <a href="https://twitter.com/langinfra_ai" style="text-decoration: underline;">在X上关注我们</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra-Preview" style="text-decoration: underline;">在线体验</a>
 </p>
 
 <p align="center">
-    <a href="https://github.com/khulnasoft/langinfra">
+    <a href="https://github.com/langinfra/langinfra">
         <img src="https://img.shields.io/github/stars/khulnasoft/langinfra">
     </a>
     <a href="https://discord.com/invite/EqksyE2EX9">
@@ -100,7 +100,7 @@ results = run_flow_from_json("path/to/flow.json", input_value="Hello, World!")
 
 或者，点击下面的 "Open in Cloud Shell" 按钮，启动 Google Cloud Shell，克隆 Langinfra 仓库，并开始一个互动教程，该教程将指导您设置必要的资源并在 GCP 项目中部署 Langinfra。
 
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/khulnasoft/langinfra&working_dir=scripts/gcp&shellonly=true&tutorial=walkthroughtutorial_spot.md)
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/langinfra/langinfra&working_dir=scripts/gcp&shellonly=true&tutorial=walkthroughtutorial_spot.md)
 
 ## 在 Railway 上部署
 
@@ -114,7 +114,7 @@ results = run_flow_from_json("path/to/flow.json", input_value="Hello, World!")
 
 ## 在 Render 上部署
 
-<a href="https://render.com/deploy?repo=https://github.com/khulnasoft/langinfra/tree/dev">
+<a href="https://render.com/deploy?repo=https://github.com/langinfra/langinfra/tree/dev">
 <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render" />
 </a>
 
@@ -170,7 +170,7 @@ langinfra run [OPTIONS]
 
 # 🌟 贡献者
 
-[![langinfra contributors](https://contrib.rocks/image?repo=khulnasoft/langinfra)](https://github.com/khulnasoft/langinfra/graphs/contributors)
+[![langinfra contributors](https://contrib.rocks/image?repo=khulnasoft/langinfra)](https://github.com/langinfra/langinfra/graphs/contributors)
 
 # 📄 许可证
 

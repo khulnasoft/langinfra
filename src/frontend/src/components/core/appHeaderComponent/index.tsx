@@ -85,7 +85,7 @@ export default function AppHeader(): JSX.Element {
               unstyled
               className="hidden items-center whitespace-nowrap pr-2 2xl:inline"
               onClick={() =>
-                window.open("https://github.com/khulnasoft/langinfra", "_blank")
+                window.open("https://github.com/langinfra/langinfra", "_blank")
               }
             >
               <GithubStarComponent />

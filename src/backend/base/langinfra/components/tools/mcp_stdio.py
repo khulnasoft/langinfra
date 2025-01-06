@@ -84,7 +84,7 @@ class MCPStdio(Component):
     description = (
         "Connects to an MCP server over stdio and exposes it's tools as langinfra tools to be used by an Agent."
     )
-    documentation: str = "http://docs.langinfra.org/components/custom"
+    documentation: str = "http://docs-langinfra.khulnasoft.com/components/custom"
     icon = "code"
     name = "MCPStdio"
 

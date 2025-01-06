@@ -8,13 +8,13 @@ To contribute to this project, please follow the [fork and pull request](https:/
 
 ## Reporting bugs or suggesting improvements
 
-Our [GitHub issues](https://github.com/khulnasoft/langinfra/issues) page is kept up to date
+Our [GitHub issues](https://github.com/langinfra/langinfra/issues) page is kept up to date
 with bugs, improvements, and feature requests. There is a taxonomy of labels to help
-with sorting and discovery of issues of interest. [See this page](https://github.com/khulnasoft/langinfra/labels) for an overview of
+with sorting and discovery of issues of interest. [See this page](https://github.com/langinfra/langinfra/labels) for an overview of
 the system we use to tag our issues and pull requests.
 
 If you're looking for help with your code, consider posting a question on the
-[GitHub Discussions board](https://github.com/khulnasoft/langinfra/discussions). Please
+[GitHub Discussions board](https://github.com/langinfra/langinfra/discussions). Please
 understand that we won't be able to provide individual support via email. We
 also believe that help is much more valuable if it's **shared publicly**,
 so that more people can benefit from it.

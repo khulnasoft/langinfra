@@ -1838,8 +1838,8 @@
                 "trace_as_metadata": true,
                 "type": "str",
                 "value": [
-                  "https://github.com/khulnasoft/langinfra/blob/main/src/backend/base/langinfra/components/agents/agent.py",
-                  "https://github.com/khulnasoft/langinfra/blob/main/src/backend/base/langinfra/components/helpers/structured_output.py",
+                  "https://github.com/langinfra/langinfra/blob/main/src/backend/base/langinfra/components/agents/agent.py",
+                  "https://github.com/langinfra/langinfra/blob/main/src/backend/base/langinfra/components/helpers/structured_output.py",
                   "https://raw.githubusercontent.com/khulnasoft/langinfra/refs/heads/main/src/backend/base/langinfra/components/tools/calculator.py",
                   "https://raw.githubusercontent.com/khulnasoft/langinfra/refs/heads/main/src/backend/base/langinfra/components/tools/tavily_search.py",
                   "https://raw.githubusercontent.com/khulnasoft/langinfra/refs/heads/main/src/backend/base/langinfra/components/models/ollama.py",

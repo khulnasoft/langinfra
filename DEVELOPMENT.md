@@ -11,7 +11,7 @@ This document details how to set up a local development environment that will al
 
 You will push changes to a fork of the Langinfra repository, and from there create a Pull Request into the project repository.
 
-Fork the [Langinfra GitHub repository](https://github.com/khulnasoft/langinfra/fork), and follow the instructions to create a new fork.
+Fork the [Langinfra GitHub repository](https://github.com/langinfra/langinfra/fork), and follow the instructions to create a new fork.
 
 On your new fork, click the "<> Code" button to get a URL to [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) using your preferred method, and clone the repostory; for example using `https`:
 
@@ -23,7 +23,7 @@ Finally, add the Project repository as `upstream`:
 
 ```bash
 cd langinfra
-git remote add upstream https://github.com/khulnasoft/langinfra.git
+git remote add upstream https://github.com/langinfra/langinfra.git
 git remote set-url --push upstream no_push
 ```
 
@@ -182,11 +182,11 @@ At which point you can navigate to http://localhost:3001/ in a browser and view 
 
 ## Adding or Modifying a Component
 
-Components reside in folders under `src/backend/base/langinfra`, and their unit tests under `src/backend/base/tests/unit/components`. 
+Components reside in folders under `src/backend/base/langinfra`, and their unit tests under `src/backend/base/tests/unit/components`.
 
 ### Adding a Component
 
-Add the component to the appropriate subdirectory, and add the component to the `__init__.py` file (alphabetical ordering on the `import` and the `__all__` list). Assuming the backend and frontend services are running, the backend service will restart as these files are changed. The new component will be visible after the backend is restarted, _*and*_ after you hit "refresh" in the browser. 
+Add the component to the appropriate subdirectory, and add the component to the `__init__.py` file (alphabetical ordering on the `import` and the `__all__` list). Assuming the backend and frontend services are running, the backend service will restart as these files are changed. The new component will be visible after the backend is restarted, _*and*_ after you hit "refresh" in the browser.
 
 > [!TIP]
 > It is faster to copy-paste the component code from your editor into the UI *without* saving in the source code in the editor, and once you are satisfied it is working you can save (restarting the backend) and refresh the browser to confirm it is present.
@@ -198,7 +198,7 @@ You should try to add a unit test for your component, though templates and best 
 Modifying a component is much the same as adding a component: it is generally easier to make changes in the UI and then save the file in the repository. Please be sure to review and modify unit tests; if there is not a unit test for the component, the addition of one that at least covers your changes would be much appreciated!
 
 > [!NOTE]
-> If you have an old version of the component on the canvas when changes are saved and the backend service restarts, that component should show "Updates Available" when the canvas is reloaded (i.e. a browser refresh). [Issue 5179](https://github.com/khulnasoft/langinfra/issues/5179) indicates this behavior is not consistent, at least in a development setting.
+> If you have an old version of the component on the canvas when changes are saved and the backend service restarts, that component should show "Updates Available" when the canvas is reloaded (i.e. a browser refresh). [Issue 5179](https://github.com/langinfra/langinfra/issues/5179) indicates this behavior is not consistent, at least in a development setting.
 
 ## Building and Testing Changes
 
@@ -221,7 +221,7 @@ Once you are happy your changes are complete, commit them and push the changes t
 
 ## Some Quirks!
 
-You may observe some quirky things: 
+You may observe some quirky things:
 
 ### Testing
 

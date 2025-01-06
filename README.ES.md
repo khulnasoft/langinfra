@@ -1,4 +1,4 @@
-# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.org)
+# [![Langinfra](./docs/static/img/hero.png)](https://www.langinfra.khulnasoft.com)
 
 <p align="center"><strong>
     Un Framework visual para crear aplicaciones de agentes autónomos y RAG
@@ -8,14 +8,14 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://docs.langinfra.org" style="text-decoration: underline;">Documentación</a> -
+    <a href="https://docs-langinfra.khulnasoft.com" style="text-decoration: underline;">Documentación</a> -
     <a href="https://discord.com/invite/EqksyE2EX9" style="text-decoration: underline;">Únete a nuestro Discord</a> -
     <a href="https://twitter.com/langinfra_ai" style="text-decoration: underline;">Síguenos en X</a> -
     <a href="https://huggingface.co/spaces/Langinfra/Langinfra" style="text-decoration: underline;">Demostración</a>
 </p>
 
 <p align="center">
-    <a href="https://github.com/khulnasoft/langinfra">
+    <a href="https://github.com/langinfra/langinfra">
         <img src="https://img.shields.io/github/stars/khulnasoft/langinfra">
     </a>
     <a href="https://discord.com/invite/EqksyE2EX9">
@@ -94,11 +94,11 @@ results = run_flow_from_json("ruta/al/flujo.json", input_value="¡Hola, Mundo!")
 
 ## Despliegue usando Google Cloud Platform
 
-Sigue nuestra guía paso a paso para desplegar Langinfra en Google Cloud Platform (GCP) usando Google Cloud Shell. La guía está disponible en el documento [**Langinfra en Google Cloud Platform**](https://github.com/khulnasoft/langinfra/blob/dev/docs/docs/deployment/gcp-deployment.md).
+Sigue nuestra guía paso a paso para desplegar Langinfra en Google Cloud Platform (GCP) usando Google Cloud Shell. La guía está disponible en el documento [**Langinfra en Google Cloud Platform**](https://github.com/langinfra/langinfra/blob/dev/docs/docs/deployment/gcp-deployment.md).
 
 Alternativamente, haz clic en el botón **"Abrir en Cloud Shell"** a continuación para iniciar Google Cloud Shell, clonar el repositorio de Langinfra y comenzar un **tutorial interactivo** que te guiará a través del proceso de configuración de los recursos necesarios y despliegue de Langinfra en tu proyecto GCP.
 
-[![Abrir en Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/khulnasoft/langinfra&working_dir=scripts/gcp&shellonly=true&tutorial=walkthroughtutorial_spot.md)
+[![Abrir en Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/langinfra/langinfra&working_dir=scripts/gcp&shellonly=true&tutorial=walkthroughtutorial_spot.md)
 
 ## Despliegue en Railway
 
@@ -112,7 +112,7 @@ O esta para desplegar Langinfra 0.6.x:
 
 ## Despliegue en Render
 
-<a href="https://render.com/deploy?repo=https://github.com/khulnasoft/langinfra/tree/dev">
+<a href="https://render.com/deploy?repo=https://github.com/langinfra/langinfra/tree/dev">
 <img src="https://render.com/images/deploy-to-render-button.svg" alt="Desplegar en Render" />
 </a>
 
@@ -167,7 +167,7 @@ Aceptamos contribuciones de desarrolladores de todos los niveles para nuestro pr
 
 # 🌟 Contribuidores
 
-[![contribuidores de langinfra](https://contrib.rocks/image?repo=khulnasoft/langinfra)](https://github.com/khulnasoft/langinfra/graphs/contributors)
+[![contribuidores de langinfra](https://contrib.rocks/image?repo=khulnasoft/langinfra)](https://github.com/langinfra/langinfra/graphs/contributors)
 
 # 📄 Licencia
 

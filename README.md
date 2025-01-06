@@ -7,9 +7,9 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://docs.langinfra.org" style="text-decoration: underline;">Docs</a> -
+    <a href="https://docs-langinfra.khulnasoft.com" style="text-decoration: underline;">Docs</a> -
     <a href="https://astra.datastax.com/signup?type=langinfra" style="text-decoration: underline;">Free Cloud Service</a> -
-    <a href="https://docs.langinfra.org/get-started-installation" style="text-decoration: underline;">Self Managed</a>
+    <a href="https://docs-langinfra.khulnasoft.com/get-started-installation" style="text-decoration: underline;">Self Managed</a>
 
 </p>
 
@@ -53,7 +53,7 @@ pip install langinfra
 ```
 
 - **Cloud:** DataStax Langinfra is a hosted environment with zero setup. [Sign up for a free account.](https://astra.datastax.com/signup?type=langinfra)
-- **Self-managed:** Run Langinfra in your environment. [Install Langinfra](https://docs.langinfra.org/get-started-installation) to run a local Langinfra server, and then use the [Quickstart](https://docs.langinfra.org/get-started-quickstart) guide to create and execute a flow.
+- **Self-managed:** Run Langinfra in your environment. [Install Langinfra](https://docs-langinfra.khulnasoft.com/get-started-installation) to run a local Langinfra server, and then use the [Quickstart](https://docs-langinfra.khulnasoft.com/get-started-quickstart) guide to create and execute a flow.
 - **Hugging Face:** [Clone the space using this link](https://huggingface.co/spaces/Langinfra/Langinfra?duplicate=true) to create a Langinfra workspace.
 
 [![Getting Started](https://github.com/user-attachments/assets/f1adfbe7-3c35-43a4-b265-661f3d4f875f)](https://www.youtube.com/watch?v=kinngWhaUKM)
@@ -74,4 +74,4 @@ We welcome contributions from developers of all levels. If you'd like to contrib
 
 ## ❤️ Contributors
 
-[![langinfra contributors](https://contrib.rocks/image?repo=khulnasoft/langinfra)](https://github.com/khulnasoft/langinfra/graphs/contributors)
+[![langinfra contributors](https://contrib.rocks/image?repo=khulnasoft/langinfra)](https://github.com/langinfra/langinfra/graphs/contributors)

@@ -85,8 +85,8 @@ ENV PATH="/app/.venv/bin:$PATH"
 LABEL org.opencontainers.image.title=langinfra
 LABEL org.opencontainers.image.authors=['Langinfra']
 LABEL org.opencontainers.image.licenses=MIT
-LABEL org.opencontainers.image.url=https://github.com/khulnasoft/langinfra
-LABEL org.opencontainers.image.source=https://github.com/khulnasoft/langinfra
+LABEL org.opencontainers.image.url=https://github.com/langinfra/langinfra
+LABEL org.opencontainers.image.source=https://github.com/langinfra/langinfra
 
 USER user
 WORKDIR /app

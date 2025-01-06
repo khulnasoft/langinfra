@@ -8,9 +8,9 @@
 </p>
 
 <p align="center" style="font-size: 12px;">
-    <a href="https://docs.langinfra.org" style="text-decoration: underline;">Documentation</a> -
+    <a href="https://docs-langinfra.khulnasoft.com" style="text-decoration: underline;">Documentation</a> -
     <a href="https://astra.datastax.com/signup?type=langinfra" style="text-decoration: underline;">Service cloud gratuit</a> -
-    <a href="https://docs.langinfra.org/get-started-installation" style="text-decoration: underline;">Autogéré</a>
+    <a href="https://docs-langinfra.khulnasoft.com/get-started-installation" style="text-decoration: underline;">Autogéré</a>
 </p>
 
 <div align="center">
@@ -53,7 +53,7 @@ uv pip install langinfra
 ```
 
 - **Cloud :** DataStax Langinfra est un environnement hébergé sans configuration. [Inscrivez-vous pour un compte gratuit.](https://astra.datastax.com/signup?type=langinfra)
-- **Autogéré :** exécutez Langinfra dans votre environnement. [Installez Langinfra](https://docs.langinfra.org/get-started-installation) pour exécuter un serveur Langinfra local, puis utilisez le guide [Démarrage rapide](https://docs.langinfra.org/get-started-quickstart) pour créer et exécuter un flux.
+- **Autogéré :** exécutez Langinfra dans votre environnement. [Installez Langinfra](https://docs-langinfra.khulnasoft.com/get-started-installation) pour exécuter un serveur Langinfra local, puis utilisez le guide [Démarrage rapide](https://docs-langinfra.khulnasoft.com/get-started-quickstart) pour créer et exécuter un flux.
 - **Hugging Face :** [Clonez l'espace à l'aide de ce lien](https://huggingface.co/spaces/Langinfra/Langinfra?duplicate=true) pour créer un espace de travail Langinfra.
 
 [![Getting Started](https://github.com/user-attachments/assets/f1adfbe7-3c35-43a4-b265-661f3d4f875f)](https://www.youtube.com/watch?v=kinngWhaUKM)
@@ -74,4 +74,4 @@ Nous acceptons les contributions des développeurs de tous niveaux. Si vous souh
 
 ## ❤️ Contributeurs
 
-[![Langinfra contributors](https://contrib.rocks/image?repo=khulnasoft/langinfra)](https://github.com/khulnasoft/langinfra/graphs/contributors)
+[![Langinfra contributors](https://contrib.rocks/image?repo=khulnasoft/langinfra)](https://github.com/langinfra/langinfra/graphs/contributors)

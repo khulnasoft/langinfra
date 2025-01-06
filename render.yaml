@@ -4,7 +4,7 @@ services:
     name: langinfra
     runtime: docker
     dockerfilePath: ./docker/render.Dockerfile
-    repo: https://github.com/khulnasoft/langinfra
+    repo: https://github.com/langinfra/langinfra
     branch: main
     plan: standard
     healthCheckPath: /health_check

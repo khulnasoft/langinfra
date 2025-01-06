@@ -19,8 +19,8 @@ FROM nginxinc/nginx-unprivileged:stable-bookworm-perl AS runtime
 LABEL org.opencontainers.image.title=langinfra-frontend
 LABEL org.opencontainers.image.authors=['Langinfra']
 LABEL org.opencontainers.image.licenses=MIT
-LABEL org.opencontainers.image.url=https://github.com/khulnasoft/langinfra
-LABEL org.opencontainers.image.source=https://github.com/khulnasoft/langinfra
+LABEL org.opencontainers.image.url=https://github.com/langinfra/langinfra
+LABEL org.opencontainers.image.source=https://github.com/langinfra/langinfra
 
 COPY --from=builder-base --chown=nginx /frontend/build /usr/share/nginx/html
 COPY --chown=nginx ./docker/frontend/start-nginx.sh /start-nginx.sh

@@ -93,7 +93,10 @@ export const AccountMenu = () => {
                 Feedback
               </HeaderMenuItemButton>
             ) : (
-              <HeaderMenuItemLink newPage href="https://docs.langinfra.org">
+              <HeaderMenuItemLink
+                newPage
+                href="https://docs-langinfra.khulnasoft.com"
+              >
                 Docs
               </HeaderMenuItemLink>
             )}
@@ -102,7 +105,7 @@ export const AccountMenu = () => {
             {ENABLE_DATASTAX_LANGINFRA ? (
               <HeaderMenuItemLink
                 newPage
-                href="https://github.com/khulnasoft/langinfra"
+                href="https://github.com/langinfra/langinfra"
               >
                 <div className="-my-2 mr-2 flex w-full items-center justify-between">
                   <div className="text-sm">Star the repo</div>
@@ -112,7 +115,7 @@ export const AccountMenu = () => {
             ) : (
               <HeaderMenuItemLink
                 newPage
-                href="https://github.com/khulnasoft/langinfra/discussions"
+                href="https://github.com/langinfra/langinfra/discussions"
               >
                 Share Feedback on Github
               </HeaderMenuItemLink>

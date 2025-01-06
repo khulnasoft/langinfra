@@ -17,13 +17,13 @@ license = "MIT"
 keywords = ["nlp", "langchain", "openai", "gpt", "gui"]
 readme = "README.md"
 maintainers = [
-    { name = "Carlos Coelho", email = "carlos@langinfra.org" },
+    { name = "Carlos Coelho", email = "carlos@langinfra.khulnasoft.com" },
     { name = "Cristhian Zanforlin", email = "cristhian.lousa@gmail.com" },
-    { name = "Gabriel Almeida", email = "gabriel@langinfra.org" },
+    { name = "Gabriel Almeida", email = "gabriel@langinfra.khulnasoft.com" },
     { name = "Igor Carvalho", email = "igorr.ackerman@gmail.com" },
     { name = "Lucas Eduoli", email = "lucaseduoli@gmail.com" },
     { name = "Otávio Anovazzi", email = "otavio2204@gmail.com" },
-    { name = "Rodrigo Nader", email = "rodrigo@langinfra.org" },
+    { name = "Rodrigo Nader", email = "rodrigo@langinfra.khulnasoft.com" },
     { name = "Italo dos Anjos", email = "italojohnnydosanjos@gmail.com" },
 ]
 
@@ -114,7 +114,7 @@ dependencies = [
     "sseclient-py==1.8.0",
     "arize-phoenix-otel>=0.6.1",
     "openinference-instrumentation-langchain>=0.1.29",
-    "crewai~=0.86.0",
+    "crewai~=0.80.0",
     "mcp>=0.9.1",
     "uv>=0.5.7",
     "ag2",
@@ -122,8 +122,8 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/khulnasoft/langinfra"
-Documentation = "https://docs.langinfra.org"
+Repository = "https://github.com/langinfra/langinfra"
+Documentation = "https://docs-langinfra.khulnasoft.com"
 
 [project.optional-dependencies]
 deploy = [

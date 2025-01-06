@@ -199,7 +199,7 @@ export default function ChatInput({
             <a
               className="underline underline-offset-4"
               target="_blank"
-              href="https://docs.langinfra.org/components-io#chat-input"
+              href="https://docs-langinfra.khulnasoft.com/components-io#chat-input"
             >
               Chat Input
             </a>{" "}
