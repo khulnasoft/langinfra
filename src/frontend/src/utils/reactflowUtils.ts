@@ -430,9 +430,9 @@ export function validateNode(node: AllNodeType, edges: Edge[]): Array<string> {
       !edges.some(
         (edge) =>
           (scapeJSONParse(edge.targetHandle!) as targetHandleType).fieldName ===
-          t &&
+            t &&
           (scapeJSONParse(edge.targetHandle!) as targetHandleType).id ===
-          node.id,
+            node.id,
       )
     ) {
       errors.push(
@@ -469,7 +469,7 @@ export function validateNodes(
   nodes: AllNodeType[],
   edges: EdgeType[],
 ): // this returns an array of tuples with the node id and the errors
-  Array<{ id: string; errors: Array<string> }> {
+Array<{ id: string; errors: Array<string> }> {
   if (nodes.length === 0) {
     return [
       {
@@ -1219,7 +1219,7 @@ function generateNodeOutputs(flow: FlowType) {
             (edge) =>
               edge.source === node.id &&
               (edge.data?.sourceHandle as sourceHandleType).name ===
-              output.name,
+                output.name,
           )
         ) {
           outputs.push(
@@ -1482,7 +1482,7 @@ export function downloadNode(NodeFLow: FlowType) {
 export function updateComponentNameAndType(
   data: any,
   component: NodeDataType,
-) { }
+) {}
 
 export function removeFileNameFromComponents(flow: FlowType) {
   flow.data!.nodes.forEach((node: AllNodeType) => {
@@ -1632,8 +1632,8 @@ export function updateGroupRecursion(
   edges: EdgeType[],
   unavailableFields:
     | {
-      [name: string]: string;
-    }
+        [name: string]: string;
+      }
     | undefined,
   globalVariablesEntries: string[] | undefined,
 ) {
@@ -1669,8 +1669,8 @@ export function updateGlobalVariables(
   node: APIClassType | undefined,
   unavailableFields:
     | {
-      [name: string]: string;
-    }
+        [name: string]: string;
+      }
     | undefined,
   globalVariablesEntries: string[] | undefined,
 ) {

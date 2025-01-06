@@ -160,10 +160,11 @@ export default function FlowToolbar(): JSX.Element {
             {ENABLE_LANGINFRA_STORE && (
               <div className="flex items-center gap-2">
                 <div
-                  className={`side-bar-button ${!hasApiKey || !validApiKey || !hasStore
+                  className={`side-bar-button ${
+                    !hasApiKey || !validApiKey || !hasStore
                       ? "cursor-not-allowed"
                       : "cursor-pointer"
-                    }`}
+                  }`}
                 >
                   {ModalMemo}
                 </div>
